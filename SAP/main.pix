@@ -1,0 +1,698 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/BR.Logic">
+  <CompilationType>CSharp</CompilationType>
+  <Description i:nil="true" />
+  <Id>23ea6399-8f76-46a5-822d-c88cdbeaa72f</Id>
+  <Logic z:Id="i2" i:type="ExecutedStep">
+    <Childs>
+      <AbstractStep z:Id="i3" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>6f42a84b-aefb-4ff9-87ab-b394dcf2d3c0</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i4">
+            <PropertyName>SID</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"ID8"</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i5">
+            <PropertyName>Client</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"800"</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i6">
+            <PropertyName>User</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>login</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i7">
+            <PropertyName>Password</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>password</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i8">
+            <PropertyName>Language</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"RU"</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId>1</SelectedOptionId>
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.Desktop.Sap.Logon</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i9" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>39276750-6ad7-44b2-963f-53f8bd3b6e0b</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i10">
+            <PropertyName>Transaction</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"S_ALR_87013611"</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.Desktop.SAP.StartTransaction</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i11" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>b8cdb315-13c6-4d20-9f88-b90fe0b250df</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i12">
+            <PropertyName>Text</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"2025"</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i13">
+            <PropertyName>XPath</PropertyName>
+            <_dataType>XPath</_dataType>
+            <_expression i:nil="true" />
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" z:Id="i14">
+              <d7p1:Nodes xmlns:d8p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel">
+                <d8p1:list>
+                  <d7p1:XPathNode z:Id="i15">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i16">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value i:nil="true" />
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i17">
+                          <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'/app/con[0]/ses[0]/wnd[0]/usr/txt$1GJAHR'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>Id</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                    <d7p1:Name>SapGuiElement</d7p1:Name>
+                  </d7p1:XPathNode>
+                </d8p1:list>
+              </d7p1:Nodes>
+              <d7p1:ScreenShotBase64>/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAoADYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2L7Xbf8/EX/fYqKJrC4S/t7m7Mcczr80Vy0LY2r910IYcjsat1Uht7u+vLpUvHhSJlVVVFPVQe4PrWkttTOO+gW+meHbXRv7KiupPsgIKBtRlaSPHTZIXLpjHG0jHPrUs9poFxYQWbXISKA5jaK9eOQeuZFYOc98n5u+af/Y97/0FJv8Av3H/APE0f2Pe/wDQUm/79x//ABNRoXqNu7bw/etbmWaIC3AVFiuWjUqP4GVWAdP9lgR7UnmxT6ncyQyK6lEG5TkdWp/9j3v/AEFJv+/cf/xNQQLcQ31zbTTtMEVGVmUA87s9APSqjuS9i1RRRVkBWXf3elWOk6zca24XTw6CXc+0NkIApORwTgHJxzzxmr3nSf8APtL+a/406zuZLaW4ZrSVhKwYYZePlA9fapmrqxUHZ3OVsJdCfw/uhuNLbQf7UJvoIJFeztozDkRk/c27vLZsfLuY+9GpX3huDw9p9trP9mSLNLc/2ZHfzLHbCESHY/zHbtVCm0gE4I2967X+1G/58p/++k/+Ko/tRv8Anyn/AO+k/wDiqlq6tY05kcLrdxDJDoEE91pd5ojacskU2rRGVL6UbdqqhYAysuCC24jJwp5x1p/5CtwdmzMMXy+n3uKu/wBqN/z5T/8AfSf/ABVUwzzXs07RNGrKqgMQTxn0J9apXJk1bQloooqjMKqWmmWl/f3z3UCSlXUKWXOBsWiiplsVHcu/8I7pX/PlD/3wKq32naDpyRPdWiqssqRKyW7ONzMFXO0HaCSBk4FFFQtWkaEb2FvYa1GttEsavbuWCjGfmWrlFFaR2M5bhRRRTJP/2Q==</d7p1:ScreenShotBase64>
+            </_xpathSettings>
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId>0</SelectedOptionId>
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.Desktop.Sap.EnterTextElement</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i18" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>209d0dd3-a5e9-458d-95d4-8f9ea1ad6d3f</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i19">
+            <PropertyName>Text</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"9"</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i20">
+            <PropertyName>XPath</PropertyName>
+            <_dataType>XPath</_dataType>
+            <_expression i:nil="true" />
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" z:Id="i21">
+              <d7p1:Nodes xmlns:d8p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel">
+                <d8p1:list>
+                  <d7p1:XPathNode z:Id="i22">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i23">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value i:nil="true" />
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i24">
+                          <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'/app/con[0]/ses[0]/wnd[0]/usr/ctxt$1PERIV'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>Id</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                    <d7p1:Name>SapGuiElement</d7p1:Name>
+                  </d7p1:XPathNode>
+                </d8p1:list>
+              </d7p1:Nodes>
+              <d7p1:ScreenShotBase64>/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAoAC8DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2L7Xbf8/EX/fYqq9vpOqW1/ZalMDbzSI2EuGiJ2hSCGQg8Fex7VoVUht7u+vLpUvHhSJlVVVFPVQe4PrWkttTOO+gkOl+HYLCezW7kaOeUTPJJqUzzbwAoYSs5dSAoHDCm3ej+Gr1bMSXMkZs1ZYHt9SmhcBsbssjgsTgEliST9at/wBj3v8A0FJv+/cf/wATR/Y97/0FJv8Av3H/APE1GhepXl0zw3NaWVs0yiKyjEMOy9kRvLwBsZgwLqdoyrEg45zUvmRTancPC6unloMqcj+KohFc2mprby3TTo8LP8yqMEFR2A9at1aXUmT6BTtJH+lX59ZF/wDQFqv50n/PtL+a/wCNOs7mS2luGa0lYSsGGGXj5QPX2olqhR0Zt1y/ji+0ey0u1bVbqxgcXtu8BupEU5WaMsV3eg5JHQVsf2o3/PlP/wB9J/8AFUf2o3/PlP8A99J/8VUJNO5d0VLiWK51K1uIJElhktmZJEYMrKSpBBHUVJUcsj3N+kxgeNVjZfnI5JI9CfSpK0WxnLcKqWmmWl/f3z3UCSlXUKWXOBsWiilLYcdyTUNN0LS7Ga9u7NVt4VLyNHbtIVAGScKCf0qDU4PDekRxPd2w/e52JDavM7AdTtRS2BkZOMDIzRRWbdlc1tqvn+AkdvYxalbzaeIvs9xamRWixtcEqQRjrwf1q/RRW1rOxi3fU//Z</d7p1:ScreenShotBase64>
+            </_xpathSettings>
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId>0</SelectedOptionId>
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.Desktop.Sap.EnterTextElement</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i25" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>4275969a-7fed-43a5-9c8d-ce003aeb4bdf</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i26">
+            <PropertyName>Text</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"9"</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i27">
+            <PropertyName>XPath</PropertyName>
+            <_dataType>XPath</_dataType>
+            <_expression i:nil="true" />
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" z:Id="i28">
+              <d7p1:Nodes xmlns:d8p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel">
+                <d8p1:list>
+                  <d7p1:XPathNode z:Id="i29">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i30">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value i:nil="true" />
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i31">
+                          <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'/app/con[0]/ses[0]/wnd[0]/usr/ctxt$1PERIB'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>Id</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                    <d7p1:Name>SapGuiElement</d7p1:Name>
+                  </d7p1:XPathNode>
+                </d8p1:list>
+              </d7p1:Nodes>
+              <d7p1:ScreenShotBase64>/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAoAC8DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2L7Xbf8/EX/fYp2nXtpDcXZkuYl3uCCXHPygVJVSG3u768ulS8eFImVVVUU9VB7g+taS2M47mv/adh/z+Qf8AfwVnavbaHrsUcV9evsjYOot9Qlg5BBBPluucEAjOcEcU7+x73/oKTf8AfuP/AOJo/se9/wCgpN/37j/+JqLIu7I2a2N9bx203mpFblNxlMh6rjLEkk8dSc1PVQRXNpqa28t006PCz/MqjBBUdgPWrdaLYzluFO0kf6Vfn1kX/wBAWq/nSf8APtL+a/406zuZLaW4ZrSVhKwYYZePlA9falLVDjoyHxzPpkHgzVP7VltI4XtpET7UyhWkKNtA3cFs9B1rJ8T634RudK0039zpF6t0r/Yjd3SC1JGAzlidp2nHIywydveun/tRv+fKf/vpP/iqP7Ub/nyn/wC+k/8AiqizaszTmWnzMixMLw6Q9vdteQHTl8u5bOZlwmHOecnrz61oVHLI9zfpMYHjVY2X5yOSSPQn0qStU76mTCs9LTTpJ9Su9RjjMcLL8zrnA2LwPx7D1ooqZ7FQ1kWbDTNC1K2FxbWa7MlSstu0TqR2ZHAZT9QOCD3qz/wjulf8+UP/AHwKKKh6FIovYW9hrUa20Sxq9u5YKMZ+ZauUUVpHYiW5/9k=</d7p1:ScreenShotBase64>
+            </_xpathSettings>
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId>0</SelectedOptionId>
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.Desktop.Sap.EnterTextElement</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i32" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>e4d1b77d-83ab-4464-a955-4a4f16fa82fd</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i33">
+            <PropertyName>Index</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>0</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i34">
+            <PropertyName>XPath</PropertyName>
+            <_dataType>XPath</_dataType>
+            <_expression i:nil="true" />
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" z:Id="i35">
+              <d7p1:Nodes xmlns:d8p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel">
+                <d8p1:list>
+                  <d7p1:XPathNode z:Id="i36">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i37">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value i:nil="true" />
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i38">
+                          <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'/app/con[0]/ses[0]/wnd[0]/tbar[1]/btn[8]'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>Id</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                    <d7p1:Name>SapGuiElement</d7p1:Name>
+                  </d7p1:XPathNode>
+                </d8p1:list>
+              </d7p1:Nodes>
+              <d7p1:ScreenShotBase64>/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAoACgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD09LFGhiYzMCY04CZ/hHvS/wBnp/z3b/v3/wDXqxH/AKiH/rkn/oIqG7u1tVj/AHUssksgiiiiXLOx7DOB0BOSQAAa6OZnPyob/Z6f892/79//AF6P7PT/AJ7t/wB+/wD69V3vr21WeW9sYxDbELctbTmVoCQrfMpVfl2sCSu7H540qFNvYbjbcq/2en/Pdv8Av3/9eiotU1SLTLWaQo0kqW8s6xhThhGMnLAEKOQMn1FFaQhUn8JjUq06btN2+8ux/wCoh/65J/6CKgDC28QafeyIGhVJYGbujPtKn8dm36sB3qeP/UQ/9ck/9BFOrFq6sbp2ZzCeJI4pdWvkubp/tMzMtnNHGI5F2bMs2MqF2jjIP3QQSfm0PDsd+unb7/Cl23RQ7AnlJjgYHT2HYYHXNSPoGnPfx3fk7WTH7teEJHQlfUf4egxp1jTpzUm5v0sTeTepUNnDqOtpZXKloJ9PuY5FBxlS8ORminTW0j3UVzBeT2s0aPGGiCHKsVJBDqw6oKK2Upxfuuw3CnL41csJFcrFGptZMqiqfmTsAPWneXcf8+sn/fSf40UUuYqweXcf8+sn/fSf40eXcf8APrJ/30n+NFFHMHKHl3H/AD6yf99J/jRRRRzByn//2Q==</d7p1:ScreenShotBase64>
+            </_xpathSettings>
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId>0</SelectedOptionId>
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>false</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.Desktop.SAP.ClickToolBarButton</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i39" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>1a777db7-7eb9-4401-b959-4a8dd84b16fe</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i40">
+            <PropertyName>XPath</PropertyName>
+            <_dataType>XPath</_dataType>
+            <_expression i:nil="true" />
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" z:Id="i41">
+              <d7p1:Nodes xmlns:d8p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel">
+                <d8p1:list>
+                  <d7p1:XPathNode z:Id="i42">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i43">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value i:nil="true" />
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i44">
+                          <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'/app/con[0]/ses[0]/wnd[0]/tbar[1]/btn[8]'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>Id</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                    <d7p1:Name>SapGuiElement</d7p1:Name>
+                  </d7p1:XPathNode>
+                </d8p1:list>
+              </d7p1:Nodes>
+              <d7p1:ScreenShotBase64>/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAoACgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD09LFGhiYzMCY04CZ/hHvS/wBnp/z3b/v3/wDXqxH/AKiH/rkn/oIqG7u1tVj/AHUssksgiiiiXLOx7DOB0BOSQAAa6OZnPyob/Z6f892/79//AF6P7PT/AJ7t/wB+/wD69V3vr21WeW9sYxDbELctbTmVoCQrfMpVfl2sCSu7H540qFNvYbjbcq/2en/Pdv8Av3/9eiotU1SLTLWaQo0kqW8s6xhThhGMnLAEKOQMn1FFaQhUn8JjUq06btN2+8ux/wCoh/65J/6CKgDC28QafeyIGhVJYGbujPtKn8dm36sB3qeP/UQ/9ck/9BFOrFq6sbp2ZzCeJI4pdWvkubp/tMzMtnNHGI5F2bMs2MqF2jjIP3QQSfm0PDsd+unb7/Cl23RQ7AnlJjgYHT2HYYHXNSPoGnPfx3fk7WTH7teEJHQlfUf4egxp1jTpzUm5v0sTeTepUNnDqOtpZXKloJ9PuY5FBxlS8ORminTW0j3UVzBeT2s0aPGGiCHKsVJBDqw6oKK2Upxfuuw3CnL41csJFcrFGptZMqiqfmTsAPWneXcf8+sn/fSf40UUuYqweXcf8+sn/fSf40eXcf8APrJ/30n+NFFHMHKHl3H/AD6yf99J/jRRRRzByn//2Q==</d7p1:ScreenShotBase64>
+            </_xpathSettings>
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId>0</SelectedOptionId>
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.Desktop.Sap.ClickElement</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i45" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>a5d88a97-740e-4dcf-9938-8617468330c0</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i46">
+            <PropertyName>ContextMenuName</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"полностью свернуть фрагмент"</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i47">
+            <PropertyName>Index</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>3</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i48">
+            <PropertyName>XPath</PropertyName>
+            <_dataType>XPath</_dataType>
+            <_expression i:nil="true" />
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" z:Id="i49">
+              <d7p1:Nodes xmlns:d8p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel">
+                <d8p1:list>
+                  <d7p1:XPathNode z:Id="i50">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i51">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value i:nil="true" />
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i52">
+                          <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'/app/con[0]/ses[0]/wnd[0]/mbar'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>Id</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                    <d7p1:Name>SapGuiElement</d7p1:Name>
+                  </d7p1:XPathNode>
+                </d8p1:list>
+              </d7p1:Nodes>
+              <d7p1:ScreenShotBase64>/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAmAxQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3G3ubS83fZrmGfbjd5UgbGemcVP5ftWTHDcXM4Nrf6grHAllmtUjwoPAG6IFjycdhkk9gdzFU9BIo39wlhYT3cgysSFsZxn0FZOneJba70q5v7iL7OkDbSu/cTxxjgcmmeMJGmjstKiP7y8mAP+6D/iR+VZGs6J/Y8N5dO6GGRwLSBCeHIxuIx1Aziktg6mpB4oEmh3GpvZeWkTiNE83PmHjvjjrSx+IrldQs7W70loPtWCjCcOcHvgCsXV0t7O30jQ7iYwwoBNdOASQT9Aeev6VLZzm11afVbX7XfadBFhp7hdzt2wrEZGM+3Gc1Wlxa2N2/1a+tPPli0aSS1gzumeYR5x1IUjJHv3qzYata3mm295KyWwmJVVlcDJBxgHvXM61dW+tHbpN5qN1czMpa1GfKQDHVSMdcdyK30Om3urQ6dLaFrqwjEmYxtijPHQA/TtSXmN+Rs+X7Vz+ueIobGCMWM9pPcPJsILhgg7k4PFO8a3M1voqpEWVJpAkrqOi4PH41zbXegjX4nWOP+z7aDCr5JzO+O4I5PPU+lJag9DuY7uze1a4F3btEnDyrINgP1zxTre6s7ssLa6gmKjLCOQNj8q4SN59ItltbiCK2XUpPMYzQGQRIDwAmOT7Y9PwSxlFnDq+qB1bav2WB0hEQZm77RwMAZpgd0L2xMDTi8tzCrbTJ5q7QfTOcZqM6ppasVbUbQEdQZ1/xrkNEsv8AidWulaqi+XFGZoosfK7sN2W9SBkf8B/PRjsLPU/GsyLaQfZbNPnURgB3Pr68k9fSi2ouh0jXNstm14Jo2t1UsZFYEYHvVHT9QeTT/t2pG3tIpX/ch22nb2ySep9qr3Maarqi6RbxhNOs8PchFwrN1WPjt3NV9cUan4m03SQAYYv30y44x6H8B/49QvzGzbhv7C4lEUF7bSyHoiSqxP4A0kmpabFI0cl/ao6nDK0ygg+4zXI2d7ZWesalqccKqATb2cMUfDt7Afh+dR3Wk7ItM06aNTqF9OZriQqC6qe2fTqfqDQtbBtc7OW+sINnnXltHvXcu+VRuHqOeRT3urSO3W4kuYFhf7sjSAK30PSuD1XVVvhdsfs9ubf9zFAbMSOy5xy5Hy49qsvp8s8mjaDFJ5bxxm5mYruCMeeR7dPxoWoPQ7UzW4uFtzPEJmGVjLjcR6gdao6tfS2jW9taRpJe3D7Y1foAOrHHYVh6DIW1PVNZv7nz0tVMSzFAu7HcAewH51s6Jby3DS6zdoRcXIxEh/5Zxdh+PWjzAvTXNtZqgu7qCFmHG9wm71xk0S3llBHHJLd28aSDKM8gAYexzzXD213ZzW+pnULd7nWrh2jjhMJZl4wMccYOffirmp2P9m+ErKwmhjkv5pNiblDGPcckKe3YcetAHULqWmurMt/asEGWImX5R0yefepftNpuiX7TDumGYh5gy49vX8K5bX9Pht7fT9DsIIlurjHmOFALBf7x69efwqtpGqWdul1fXqeZqqv5NvAEJ24GFVR27j/9fIB10mpabFI0cl/ao6nDK0ygg+4zUktzaQQpNLcwxxP913kAVvoa4m60nZFpmnTRqdQvpzNcSFQXVT2z6dT9QamW7sItf1FtZhMkkWIrS2aIsCvOABjHPGM+tAHYfabT7L9q+0w/Z/8Anr5g2dcdenWg3Novk7rmEed/qsyD95/u+v4VwpsLqDSbPSHDRT6jc+a0ZH+rQYAyP1/CrMUF8+u3IFwb1tKt2EJEQUb8cAKPQ/yoA7Ca8sraURT3dvFIRkI8gU/kTT2mt0uFt2miWdxlYy43Eew69jXndlaW2pQLBJqZN5cSZeH7Dvk3Z5/eHnHc8jvV4C4lvtS1W2vfs8enRiCJzEH34GMDPTOOv+1RtuHodn9sstsrfa7fbCcSHzBhD0554/GnNc2qGINcQgzf6rLj5/8Ad9evauCaGYaDY2UcbS3Wpzmd1HVlHTPt3zVtLe5m8RXcyZnuNPtiQFGVEmDtVR6DPHrj3o2A7Ca8sraURT3dvFIRkI8gU/kTVjy/avNrK0ttSgWCTUyby4ky8P2HfJuzz+8POO55HevS4IRBBHECSEUKCe+Bii1kLqN8v2o8v2qbFGKQ7EPl+1Hl+1TYoxQFiHy/ajy/apsUYoCxD5ftR5ftU2KMUBYh8v2o8v2qbFGKAsQ+X7UeX7VNijFAWIfL9qPL9qmxRigLEPl+1Hl+1TYoxQFiHy/ajy/apsUYoCxD5ftR5ftU2KMUBYh8v2o8v2qbFGKAsQ+X7UeX7VNijFAWIfL9qPL9qmxRigLEPl+1Hl+1TYoxQFiHy/ajy/apsUYoCxD5ftR5ftU2KMUBYh8v2o8v2qbFGKAsQ+X7UeX7VNijFAWIfL9qPL9qmxRigLEPl+1Hl+1TYoxQFiHy/ajy/apsUYoCxD5ftR5ftU2KMUBYh8v2o8v2qbFGKAsQ+X7UeX7VNijFAWIfL9qPL9qmxRigLEPl+1Hl+1TYoxQFiHy/ajy/apsUYoCxD5ftR5ftU2KMUBYh8v2o8v2qbFGKAsQ+X7UeX7VNijFAWIfL9qPL9qmxRigLEPl+1FTYooCxXtrGC0kkki80vIArNJM8hIGcDLE+p/OrNRb5P7if99n/AAo3yf3E/wC+z/hQMloqLfJ/cT/vs/4Ub5P7if8AfZ/wpAS0VFvk/uJ/32f8KN8n9xP++z/hQBLRUW+T+4n/AH2f8KN8n9xP++z/AIUAS1n6bpFvpklzJE8skly++R5CCSfwA45NW98n9xP++z/hRvk/uJ/32f8ACgCWiot8n9xP++z/AIUb5P7if99n/CgCWkYFkZQxUkYDDGR781Hvk/uJ/wB9n/CjfJ/cT/vs/wCFFgIdO06DTLXyIC7ZYu7ucs7HqSfWrdRb5P7if99n/CjfJ/cT/vs/4UwJaKi3yf3E/wC+z/hRvk/uJ/32f8KQEtFRb5P7if8AfZ/wo3yf3E/77P8AhQBBqGmw6mkUdw8nlI4cxqQFkx0Dccj2q5UW+T+4n/fZ/wAKN8n9xP8Avs/4UAS0VFvk/uJ/32f8KN8n9xP++z/hQBLRUW+T+4n/AH2f8KN8n9xP++z/AIUAS0VFvk/uJ/32f8KN8n9xP++z/hQBLRUW+T+4n/fZ/wAKN8n9xP8Avs/4UAS0VFvk/uJ/32f8KN8n9xP++z/hQBLRUW+T+4n/AH2f8KN8n9xP++z/AIUAS0VFvk/uJ/32f8KN8n9xP++z/hQBLRUW+T+4n/fZ/wAKN8n9xP8Avs/4UAS0VFvk/uJ/32f8KN8n9xP++z/hQBLRUW+T+4n/AH2f8KN8n9xP++z/AIUAS0VFvk/uJ/32f8KN8n9xP++z/hQBLRUW+T+4n/fZ/wAKN8n9xP8Avs/4UAS0VFvk/uJ/32f8KN8n9xP++z/hQBLRUW+T+4n/AH2f8KN8n9xP++z/AIUAS0VFvk/uJ/32f8KN8n9xP++z/hQBLRUW+T+4n/fZ/wAKN8n9xP8Avs/4UAS0VFvk/uJ/32f8KN8n9xP++z/hQBLRUW+T+4n/AH2f8KN8n9xP++z/AIUAS0VFvk/uJ/32f8KN8n9xP++z/hQBLRUW+T+4n/fZ/wAKN8n9xP8Avs/4UAS0VFvk/uJ/32f8KN8n9xP++z/hQBLRUW+T+4n/AH2f8KN8n9xP++z/AIUAS0VFvk/uJ/32f8KN8n9xP++z/hQBLRUW+T+4n/fZ/wAKN8n9xP8Avs/4UAS0VFvk/uJ/32f8KN8n9xP++z/hQBLRUW+T+4n/AH2f8KN8n9xP++z/AIUAS0VFvk/uJ/32f8KN8n9xP++z/hQBLRUW+T+4n/fZ/wAKN8n9xP8Avs/4UAS0VFvk/uJ/32f8KN8n9xP++z/hQBLRUW+T+4n/AH2f8KN8n9xP++z/AIUAS0VFvk/uJ/32f8KN8n9xP++z/hQBLRUW+T+4n/fZ/wAKN8n9xP8Avs/4UAS0VFvk/uJ/32f8KN8n9xP++z/hQBLRUW+T+4n/AH2f8KN8n9xP++z/AIUAS0VFvk/uJ/32f8KN8n9xP++z/hQBLRUW+T+4n/fZ/wAKN8n9xP8Avs/4UAS0VFvk/uJ/32f8KN8n9xP++z/hQBLRUW+T+4n/AH2f8KN8n9xP++z/AIUAS0VFvk/uJ/32f8KKAKer6jHpGlT38kbSLEB8q9SSQB+prij461VZixtrLyhz5WG3Y/38/wDstFFebmGIqUpQUHa5z1ZNPQ7XR9Sj1jSbfUIkaNJlztbqMEg/qKu4oor0lsbR1RkWtj9uNxNNdXYYXEiARzsoADEDgGrP9iw/8/d//wCBT/40UUFB/YsP/P3f/wDgU/8AjR/YsP8Az93/AP4FP/jRRQAf2LD/AM/d/wD+BT/40f2LD/z93/8A4FP/AI0UUAH9iw/8/d//AOBT/wCNH9iw/wDP3f8A/gU/+NFFAB/YsP8Az93/AP4FP/jR/YsP/P3f/wDgU/8AjRRQAf2LD/z93/8A4FP/AI0f2LD/AM/d/wD+BT/40UUAH9iw/wDP3f8A/gU/+NH9iw/8/d//AOBT/wCNFFAB/YsP/P3f/wDgU/8AjR/YsP8Az93/AP4FP/jRRQAf2LD/AM/d/wD+BT/41Wu7H7CbeaG6uyxuI0IknZgQWAPBNFFAGvijFFFMQYrmfFGt6jpepaTaWH2Vftj7XeeJn2/vYYxgBl/56k/h2oorSik5pMyrtqm2jQ+zeIv+gppf/gtk/wDj9Z/hfW9R1TUtWtL/AOyt9jfajwRMm797NGcgs3/PIH8e9FFVHWEmyZe7Uil1udDLN5c8Ee3PmsVznpgE/wBKlxRRWT6GyOAufHl9LLusbe3jgyQvnqzswz3wwA/Wuj8N6/8A25FOskHlT25UPtbKncDgjv26fqaKK8nC4irPEyhJ6Iwpzk5WZo6nfJpmnTXjozrGB8q9SSQB+prn/wDhINV8zf5dns/55bWz/wB95/8AZaKK4c8xuIw04KlK1/Q93AUKdSDclfU6HTb1NS0+G8jRkWQH5W6gg4P6isjxX4m/4R2C3WO2864uSwj3NhF2gZJ79xx+ooor2p1JLD86etjnoUoSxSptaXOVsfiTfLcA6haW0luWAY26sjLk9RliG/SvS8UUVjgK06kG5u50ZrQp0Zx9mrXIkm33U0G3HlqrZz1zn/CoNWunsNGvryIKZLe3klQMOCVUkZ9uKKK9BnkoyNdv9Z8P6PNqktzYXMcDJvhW0eMuC4UgN5jYPPXBrcsrqO/sLe8iDCO4iWVAw5AYAjPvzRRSGZfibVLvS7az+xeQJbm58ndMhdVHlu+cBlyfkx171iHxdqLXOj7IrRYrq2sZp1KMWzcSFCFO4YAxnkHNFFdVKEXFNo46s5KbSZ22K5bWvEN9p/iW3sIFtjbH7L5nmIxdvOmaPghgBgDPIOaKKyopOWptXk1HQNF8Q32oeJbiwnW2FsPtXl+WjB18mZY+SWIOQc8AYrqcUUUVklLQKEm46kVtN9ogEm3b8zLjOehI/pXPeI/E8uj30NpbW6SSbBNKZCQChJAUY6E7TyenHBzwUVxYycqdKUoaP/glTk1C6K2peJb7RdI03WrmS2urG7kjDRRWrRSKroWyCZGGRjp39R1rr8UUVujQ4648X3La61hbRRRwmcWiySIXYSb9m4qGGVzkYznHzZ/hq8mu3Vn4vg0DUDDO11b+dDNbxGMKRvyrAu2RhOoP4c5BRXPhqkp83M9m0Z023e50eKxrR9Zv45Z4rywhjFxNEiNZu5ASRkGT5oyTtz0FFFdJoQ+G9ffV7jVLG4jUXWnXDQySRrtSQbmCsASSD8pyMn684FzxFqv9h6BeaiE3tCnyLjILkhVzyOMkZ9s0UUnsJ7GRBrGq3nhWXX7a8sjCkMsqxS2Dqx2bsg4mIGSvvWzoWqx67oltqUcTRLOpyjHJUglSM9xkHn+VFFC2BbFyWby54I9ufNYrnPTAJ/pVHxDqE2laNJd26xmYSRRr5gJUF5FTJAIzjdnqKKK1gk5RIm2oSaOW/wCEm1//AJ76Z/4BSf8Ax6rWleI9Wm1mxtLtrKSG5kaM+TbvGykRu+cmRv7mOneiiuqUI8r0OVSlda9UX/E2tX2mXVlbWP2dWnjlkZ54mkACGMYADL13+vasb/hJtf8A+e+mf+AUn/x6iippwi4JtFVJS52rmz4Z1q+1O6vba++zs0EcUivBE0YIcyDBBZumz171vSzeXPBHtz5rFc56YBP9KKKxqRSm0v60NqTbgm/61JTgAn0rz+fx1qE4S4soraC2kyYxNC0rkZxk4dQPpz9aKKrDxUr3IxE5Rskzo/DuvtrLXNvPAsdzbBC5jOUYMDgjPIPByP1NVfGHiSXw7CkqMiRCB5pGNuZjhZIowAvmJ3lznPaiioqpRk7f1obYb95yKXVpfic3F8RZ5tMF+t3EIj2Oknd1x/z9V1HhXX59cEjStG6eRHNG625hOGeVCCu9+8Wc570UVnh5OpQlKW6dvyM6vuYt047a/qdHijFFFI3DFGKKKADFGKKKADFGKKKADFGKKKADFGKKKADFGKKKADFGKKKADFGKKKADFGKKKADFGKKKADFGKKKADFFFFAH/2Q==</d7p1:ScreenShotBase64>
+            </_xpathSettings>
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId>0</SelectedOptionId>
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.Desktop.SAP.ClicklToolbarContextMenu</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i53" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>4832a137-d664-4260-b114-bf3f9f896169</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i54">
+            <PropertyName>Element</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>sapElement</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i55">
+            <PropertyName>XPath</PropertyName>
+            <_dataType>XPath</_dataType>
+            <_expression i:nil="true" />
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" z:Id="i56">
+              <d7p1:Nodes xmlns:d8p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel">
+                <d8p1:list>
+                  <d7p1:XPathNode z:Id="i57">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i58">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value i:nil="true" />
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i59">
+                          <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'/app/con[0]/ses[0]/wnd[0]/usr/sub/1[0,0]/sub/1/2[0,0]/sub/1/2/32[0,30]/lbl[5,30]'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>Id</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                    <d7p1:Name>SapGuiElement</d7p1:Name>
+                  </d7p1:XPathNode>
+                </d8p1:list>
+              </d7p1:Nodes>
+              <d7p1:ScreenShotBase64>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</d7p1:ScreenShotBase64>
+            </_xpathSettings>
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>false</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.Desktop.Sap.FindElement</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i60" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>45b30f19-0c82-445e-b7cd-4900d1e83b30</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i61">
+            <PropertyName>XPath</PropertyName>
+            <_dataType>XPath</_dataType>
+            <_expression i:nil="true" />
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" z:Id="i62">
+              <d7p1:Nodes xmlns:d8p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel">
+                <d8p1:list>
+                  <d7p1:XPathNode z:Id="i63">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i64">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value i:nil="true" />
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i65">
+                          <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'/app/con[0]/ses[0]/wnd[0]/usr/sub/1[0,0]/sub/1/2[0,0]/sub/1/2/32[0,30]/lbl[5,30]'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>Id</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                    <d7p1:Name>SapGuiElement</d7p1:Name>
+                  </d7p1:XPathNode>
+                </d8p1:list>
+              </d7p1:Nodes>
+              <d7p1:ScreenShotBase64>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</d7p1:ScreenShotBase64>
+            </_xpathSettings>
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId>0</SelectedOptionId>
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>false</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.Desktop.Sap.ClickElement</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i66" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>aa48fd4e-8c24-4a4e-9698-c223878c6030</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i67">
+            <PropertyName>ClickType</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_screenShotBase64 i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Activities.Desktop.Core" i:type="d7p1:MouseClickType">Double</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i68">
+            <PropertyName>XPath</PropertyName>
+            <_dataType>XPath</_dataType>
+            <_expression i:nil="true" />
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" z:Id="i69">
+              <d7p1:Nodes xmlns:d8p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel">
+                <d8p1:list>
+                  <d7p1:XPathNode z:Id="i70">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i71">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value i:nil="true" />
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i72">
+                          <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'/app/con[0]/ses[0]/wnd[1]/usr/sub/1[0,0]/sub/1/2[0,0]/lbl[1,1]'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>Id</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                    <d7p1:Name>SapGuiElement</d7p1:Name>
+                  </d7p1:XPathNode>
+                </d8p1:list>
+              </d7p1:Nodes>
+              <d7p1:ScreenShotBase64>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</d7p1:ScreenShotBase64>
+            </_xpathSettings>
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId>0</SelectedOptionId>
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>false</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.Desktop.Sap.ClickElement</_activityFullName>
+      </AbstractStep>
+    </Childs>
+    <HeightOnFlowchart i:nil="true" />
+    <Id>023630c4-bcc3-41ce-ae19-7f259777f818</Id>
+    <Parent i:nil="true" />
+    <PositionOnFlowchart xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+    <PropertyValues />
+    <SelectedOptionId i:nil="true" />
+    <WidthOnFlowchart i:nil="true" />
+    <AutoCloseMode>None</AutoCloseMode>
+    <EnableStatus>true</EnableStatus>
+    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+    <RetryCount>-1</RetryCount>
+    <Text></Text>
+    <_activityFullName>BR.Core.Base.Container</_activityFullName>
+  </Logic>
+  <Name>main.pix</Name>
+  <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <Params />
+  <PlatformVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+    <d2p1:_Build>0</d2p1:_Build>
+    <d2p1:_Major>3</d2p1:_Major>
+    <d2p1:_Minor>2</d2p1:_Minor>
+    <d2p1:_Revision>0</d2p1:_Revision>
+  </PlatformVersion>
+  <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
+  <Variables xmlns:d2p1="http://schemas.datacontract.org/2004/07/BR.Logic.Params">
+    <d2p1:Variable z:Id="i73">
+      <d2p1:DefaultValueExpression>"PETROSYAN"</d2p1:DefaultValueExpression>
+      <d2p1:Description></d2p1:Description>
+      <d2p1:Name>login</d2p1:Name>
+      <d2p1:TypeString>System.String</d2p1:TypeString>
+    </d2p1:Variable>
+    <d2p1:Variable z:Id="i74">
+      <d2p1:DefaultValueExpression>"A78732a!"</d2p1:DefaultValueExpression>
+      <d2p1:Description></d2p1:Description>
+      <d2p1:Name>password</d2p1:Name>
+      <d2p1:TypeString>System.String</d2p1:TypeString>
+    </d2p1:Variable>
+  </Variables>
+  <Version i:nil="true" />
+</Script>
