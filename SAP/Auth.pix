@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/BR.Logic">
+  <CompilationType>CSharp</CompilationType>
+  <Description>Новый скрипт без наполнения.</Description>
+  <Id>80af64f8-a478-4ddc-8f07-8a4839eae084</Id>
+  <Logic z:Id="i2" i:type="ExecutedStep">
+    <Childs>
+      <AbstractStep z:Id="i3" i:type="ExecutedStep">
+        <Childs>
+          <AbstractStep z:Id="i4" i:type="CommentStep">
+            <Childs />
+            <HeightOnFlowchart>50</HeightOnFlowchart>
+            <Id>161ecd19-8e8b-47c7-a7a9-fef669530ecd</Id>
+            <Parent z:Ref="i3" />
+            <PositionOnFlowchart xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+            <PropertyValues />
+            <SelectedOptionId i:nil="true" />
+            <WidthOnFlowchart>360</WidthOnFlowchart>
+            <IsCollapsed>false</IsCollapsed>
+            <Text>Проверяем, открыт ли SAP. Если нет - авторизуемся.</Text>
+          </AbstractStep>
+          <AbstractStep z:Id="i5" i:type="ExecutedStep">
+            <Childs>
+              <AbstractStep z:Id="i6" i:type="ExecutedStep">
+                <Childs>
+                  <AbstractStep z:Id="i7" i:type="ExecutedStep">
+                    <Childs />
+                    <HeightOnFlowchart>50</HeightOnFlowchart>
+                    <Id>c49d8a71-aafe-46f3-a5a6-49402715e5e4</Id>
+                    <Parent z:Ref="i6" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i8">
+                        <PropertyName>TimeToSearchElement</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>15</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i9">
+                        <PropertyName>Result</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>isLoggedIn</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i10">
+                        <PropertyName>XPath</PropertyName>
+                        <_dataType>XPath</_dataType>
+                        <_expression i:nil="true" />
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" z:Id="i11">
+                          <d13p1:Nodes xmlns:d14p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel">
+                            <d14p1:list>
+                              <d13p1:XPathNode z:Id="i12">
+                                <d13p1:AttributeOperators xmlns:d17p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                                <d13p1:Attributes>
+                                  <d14p1:list>
+                                    <d13p1:XPathAttribute z:Id="i13">
+                                      <d13p1:IsEnabled>false</d13p1:IsEnabled>
+                                      <d13p1:IsPositionAttribute>true</d13p1:IsPositionAttribute>
+                                      <d13p1:Operator>Equal</d13p1:Operator>
+                                      <d13p1:Value i:nil="true" />
+                                      <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
+                                      <d13p1:_name></d13p1:_name>
+                                    </d13p1:XPathAttribute>
+                                    <d13p1:XPathAttribute z:Id="i14">
+                                      <d13p1:IsEnabled>true</d13p1:IsEnabled>
+                                      <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
+                                      <d13p1:Operator>Equal</d13p1:Operator>
+                                      <d13p1:Value>'/app/con[0]/ses[0]/wnd[0]/tbar[0]/btn[419]'</d13p1:Value>
+                                      <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
+                                      <d13p1:_name>Id</d13p1:_name>
+                                    </d13p1:XPathAttribute>
+                                  </d14p1:list>
+                                </d13p1:Attributes>
+                                <d13p1:IsEnabled>true</d13p1:IsEnabled>
+                                <d13p1:Name>SapGuiElement</d13p1:Name>
+                              </d13p1:XPathNode>
+                            </d14p1:list>
+                          </d13p1:Nodes>
+                          <d13p1:ScreenShotBase64>/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAqACoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3vzl9H/74b/Cjzl9H/wC+G/wpnmJ5wh3fvCu4DHbp/WqOsavDottFLNDNMZpfKjjh27mbazfxEDop71Si27IlySV2aPnL6P8A98N/hR5y+j/98N/hXLf8JtD/ANAbU/8Avq3/APjtXtJ8SwatfGzFnd20vlNKvn+WQyqVBxsdu7L19ap0pJXaIVWDdkzb85fR/wDvhv8ACjzl9H/74b/CsTVvEsGk3wszZ3dzL5Syt5HlgKrFgM73XurdPSqP/CbQ/wDQG1P/AL6t/wD47QqUmrpA6sE7Nm+3/IYj/wCvd/8A0Jaz/EulDU4LHfdPbQ29z50siAFwvlunGVYdXGcjGMmtc2+b1bjd92Mptx6kHP6VHqFhHqNr5Mhxhgytg8EHr1+v/wBesqk5xi5U9ZW09TSMIydp7HK2Hhex1GIyQazqwx95XjgBHX/pl7fy9asWGhpo3i+zCXt1c+bYXOfPEfy4kg6bEX1756VetNLvtLjM9vFaXV64CMJJnhVVyTwQrZ/h4x689qltrXVbjXYb+/gs7eOC2lhRILhpSxdoyScouAPL9+tLCVsROiniLKVtUKvSoxqWpXa07mF4hsrabXtTvLvUJ7OK0023ctHsw2ZJ8A7kc9QAMDPPeuGF/qxGRoPiAg9P3kP/AMjV6Zrmi3t7eXT28NtNDdQQRsJLpoWjaKR3VhiNweXHX+73zVtZvESqB/ZWlcDH/IRk/wDjFdPPP7L/ACMeSH2lr8zV80/882/Mf40eaf8Anm35j/Gm0VibjvNP/PNvzH+NHmn/AJ5t+Y/xptFADvNP/PNvzH+NHmn/AJ5t+Y/xptFAH//Z</d13p1:ScreenShotBase64>
+                        </_xpathSettings>
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart>360</WidthOnFlowchart>
+                    <AutoCloseMode>None</AutoCloseMode>
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text></Text>
+                    <_activityFullName>Activities.Desktop.Sap.ElementExists</_activityFullName>
+                  </AbstractStep>
+                </Childs>
+                <HeightOnFlowchart i:nil="true" />
+                <Id>3969d304-c51f-4662-8529-0626cff45eff</Id>
+                <Parent z:Ref="i5" />
+                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+                <PropertyValues />
+                <SelectedOptionId i:nil="true" />
+                <WidthOnFlowchart i:nil="true" />
+                <AutoCloseMode>None</AutoCloseMode>
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.Try</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i15" i:type="ExecutedStep">
+                <Childs>
+                  <AbstractStep z:Id="i16" i:type="ExecutedStep">
+                    <Childs />
+                    <HeightOnFlowchart>50</HeightOnFlowchart>
+                    <Id>459de5f6-d905-4b7f-8525-62c87e258348</Id>
+                    <Parent z:Ref="i15" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i17">
+                        <PropertyName>Value</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>false</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i18">
+                        <PropertyName>To</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>isLoggedIn</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart>360</WidthOnFlowchart>
+                    <AutoCloseMode>None</AutoCloseMode>
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text></Text>
+                    <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+                  </AbstractStep>
+                </Childs>
+                <HeightOnFlowchart i:nil="true" />
+                <Id>4731be1d-a9d8-491e-bc9e-4e2c095c10f3</Id>
+                <Parent z:Ref="i5" />
+                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+                <PropertyValues />
+                <SelectedOptionId i:nil="true" />
+                <WidthOnFlowchart i:nil="true" />
+                <AutoCloseMode>None</AutoCloseMode>
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.Catch</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i19" i:type="ExecutedStep">
+                <Childs>
+                  <AbstractStep z:Id="i20" i:type="ExecutedStep">
+                    <Childs>
+                      <AbstractStep z:Id="i21" i:type="ExecutedStep">
+                        <Childs>
+                          <AbstractStep z:Id="i22" i:type="ExecutedStep">
+                            <Childs />
+                            <HeightOnFlowchart>50</HeightOnFlowchart>
+                            <Id>b2ff184d-4ad3-4837-bccb-678064d21c91</Id>
+                            <Parent z:Ref="i21" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+                            <PropertyValues>
+                              <PropertyValue z:Id="i23">
+                                <PropertyName>SID</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>"ID8"</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                              <PropertyValue z:Id="i24">
+                                <PropertyName>Client</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>"810"</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                              <PropertyValue z:Id="i25">
+                                <PropertyName>User</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>Login</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                              <PropertyValue z:Id="i26">
+                                <PropertyName>Password</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>Password</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                              <PropertyValue z:Id="i27">
+                                <PropertyName>Language</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>"RU"</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                            </PropertyValues>
+                            <SelectedOptionId>1</SelectedOptionId>
+                            <WidthOnFlowchart>360</WidthOnFlowchart>
+                            <AutoCloseMode>None</AutoCloseMode>
+                            <EnableStatus>true</EnableStatus>
+                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                            <RetryCount>-1</RetryCount>
+                            <Text></Text>
+                            <_activityFullName>Activities.Desktop.Sap.Logon</_activityFullName>
+                          </AbstractStep>
+                          <AbstractStep z:Id="i28" i:type="ExecutedStep">
+                            <Childs />
+                            <HeightOnFlowchart>50</HeightOnFlowchart>
+                            <Id>883afd0f-255e-4546-9a6f-2695d3e595da</Id>
+                            <Parent z:Ref="i21" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+                            <PropertyValues>
+                              <PropertyValue z:Id="i29">
+                                <PropertyName>Transaction</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>"s_alr_87013611"</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                            </PropertyValues>
+                            <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart>360</WidthOnFlowchart>
+                            <AutoCloseMode>None</AutoCloseMode>
+                            <EnableStatus>true</EnableStatus>
+                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                            <RetryCount>-1</RetryCount>
+                            <Text></Text>
+                            <_activityFullName>Activities.Desktop.SAP.StartTransaction</_activityFullName>
+                          </AbstractStep>
+                        </Childs>
+                        <HeightOnFlowchart i:nil="true" />
+                        <Id>24f54dee-1f3e-44cb-bd74-0cb8c44995b6</Id>
+                        <Parent z:Ref="i20" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+                        <PropertyValues />
+                        <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart i:nil="true" />
+                        <AutoCloseMode>None</AutoCloseMode>
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text></Text>
+                        <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
+                      </AbstractStep>
+                      <AbstractStep z:Id="i30" i:type="ExecutedStep">
+                        <Childs />
+                        <HeightOnFlowchart i:nil="true" />
+                        <Id>ce5041ab-48d7-468b-8752-02ada31fd7a1</Id>
+                        <Parent z:Ref="i20" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+                        <PropertyValues />
+                        <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart i:nil="true" />
+                        <AutoCloseMode>None</AutoCloseMode>
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text></Text>
+                        <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
+                      </AbstractStep>
+                    </Childs>
+                    <HeightOnFlowchart i:nil="true" />
+                    <Id>bca64e59-2990-43f0-9996-d57d1efc88de</Id>
+                    <Parent z:Ref="i19" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i31">
+                        <PropertyName>Condition</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>isLoggedIn == false</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text></Text>
+                    <_activityFullName>BR.Core.Base.If</_activityFullName>
+                  </AbstractStep>
+                </Childs>
+                <HeightOnFlowchart i:nil="true" />
+                <Id>3d8669ab-16fe-4deb-97d8-a1120b7b9db4</Id>
+                <Parent z:Ref="i5" />
+                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+                <PropertyValues />
+                <SelectedOptionId i:nil="true" />
+                <WidthOnFlowchart i:nil="true" />
+                <AutoCloseMode>None</AutoCloseMode>
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.Finally</_activityFullName>
+              </AbstractStep>
+            </Childs>
+            <HeightOnFlowchart i:nil="true" />
+            <Id>d4cdf6ab-c9e4-4de0-8698-50a312d96283</Id>
+            <Parent z:Ref="i3" />
+            <PositionOnFlowchart xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+            <PropertyValues />
+            <SelectedOptionId i:nil="true" />
+            <WidthOnFlowchart i:nil="true" />
+            <AutoCloseMode>None</AutoCloseMode>
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>BR.Core.Base.TryCatch</_activityFullName>
+          </AbstractStep>
+        </Childs>
+        <HeightOnFlowchart i:nil="true" />
+        <Id>34c69316-01db-488f-9190-f89e7e1741f3</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues />
+        <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Проверка и авторизация SAP</Text>
+        <_activityFullName>BR.Core.Base.Container</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i32" i:type="ExecutedStep">
+        <Childs>
+          <AbstractStep z:Id="i33" i:type="ExecutedStep">
+            <Childs>
+              <AbstractStep z:Id="i34" i:type="ExecutedStep">
+                <Childs>
+                  <AbstractStep z:Id="i35" i:type="ExecutedStep">
+                    <Childs />
+                    <HeightOnFlowchart>50</HeightOnFlowchart>
+                    <Id>25ffc730-abcd-4037-bf4a-322d3143732f</Id>
+                    <Parent z:Ref="i34" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i36">
+                        <PropertyName>XPath</PropertyName>
+                        <_dataType>XPath</_dataType>
+                        <_expression i:nil="true" />
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" z:Id="i37">
+                          <d13p1:Nodes xmlns:d14p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel">
+                            <d14p1:list>
+                              <d13p1:XPathNode z:Id="i38">
+                                <d13p1:AttributeOperators xmlns:d17p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                                <d13p1:Attributes>
+                                  <d14p1:list>
+                                    <d13p1:XPathAttribute z:Id="i39">
+                                      <d13p1:IsEnabled>false</d13p1:IsEnabled>
+                                      <d13p1:IsPositionAttribute>true</d13p1:IsPositionAttribute>
+                                      <d13p1:Operator>Equal</d13p1:Operator>
+                                      <d13p1:Value i:nil="true" />
+                                      <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
+                                      <d13p1:_name></d13p1:_name>
+                                    </d13p1:XPathAttribute>
+                                    <d13p1:XPathAttribute z:Id="i40">
+                                      <d13p1:IsEnabled>true</d13p1:IsEnabled>
+                                      <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
+                                      <d13p1:Operator>Equal</d13p1:Operator>
+                                      <d13p1:Value>'/app/con[0]/ses[0]/wnd[0]/tbar[0]/btn[419]'</d13p1:Value>
+                                      <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
+                                      <d13p1:_name>Id</d13p1:_name>
+                                    </d13p1:XPathAttribute>
+                                  </d14p1:list>
+                                </d13p1:Attributes>
+                                <d13p1:IsEnabled>true</d13p1:IsEnabled>
+                                <d13p1:Name>SapGuiElement</d13p1:Name>
+                              </d13p1:XPathNode>
+                            </d14p1:list>
+                          </d13p1:Nodes>
+                          <d13p1:ScreenShotBase64>/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAqACoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3vzl9H/74b/Cjzl9H/wC+G/wpnmJ5wh3fvCu4DHbp/WqOsavDottFLNDNMZpfKjjh27mbazfxEDop71Si27IlySV2aPnL6P8A98N/hR5y+j/98N/hXLf8JtD/ANAbU/8Avq3/APjtXtJ8SwatfGzFnd20vlNKvn+WQyqVBxsdu7L19ap0pJXaIVWDdkzb85fR/wDvhv8ACjzl9H/74b/CsTVvEsGk3wszZ3dzL5Syt5HlgKrFgM73XurdPSqP/CbQ/wDQG1P/AL6t/wD47QqUmrpA6sE7Nm+3/IYj/wCvd/8A0Jaz/EulDU4LHfdPbQ29z50siAFwvlunGVYdXGcjGMmtc2+b1bjd92Mptx6kHP6VHqFhHqNr5Mhxhgytg8EHr1+v/wBesqk5xi5U9ZW09TSMIydp7HK2Hhex1GIyQazqwx95XjgBHX/pl7fy9asWGhpo3i+zCXt1c+bYXOfPEfy4kg6bEX1756VetNLvtLjM9vFaXV64CMJJnhVVyTwQrZ/h4x689qltrXVbjXYb+/gs7eOC2lhRILhpSxdoyScouAPL9+tLCVsROiniLKVtUKvSoxqWpXa07mF4hsrabXtTvLvUJ7OK0023ctHsw2ZJ8A7kc9QAMDPPeuGF/qxGRoPiAg9P3kP/AMjV6Zrmi3t7eXT28NtNDdQQRsJLpoWjaKR3VhiNweXHX+73zVtZvESqB/ZWlcDH/IRk/wDjFdPPP7L/ACMeSH2lr8zV80/882/Mf40eaf8Anm35j/Gm0VibjvNP/PNvzH+NHmn/AJ5t+Y/xptFADvNP/PNvzH+NHmn/AJ5t+Y/xptFAH//Z</d13p1:ScreenShotBase64>
+                        </_xpathSettings>
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId>0</SelectedOptionId>
+                    <WidthOnFlowchart>360</WidthOnFlowchart>
+                    <AutoCloseMode>None</AutoCloseMode>
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text></Text>
+                    <_activityFullName>Activities.Desktop.Sap.ClickElement</_activityFullName>
+                  </AbstractStep>
+                </Childs>
+                <HeightOnFlowchart i:nil="true" />
+                <Id>fdf2e547-9075-429e-985b-db502c75452d</Id>
+                <Parent z:Ref="i33" />
+                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+                <PropertyValues />
+                <SelectedOptionId i:nil="true" />
+                <WidthOnFlowchart i:nil="true" />
+                <AutoCloseMode>None</AutoCloseMode>
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i41" i:type="ExecutedStep">
+                <Childs />
+                <HeightOnFlowchart i:nil="true" />
+                <Id>f2789e47-e964-49f5-8006-6271f76ded47</Id>
+                <Parent z:Ref="i33" />
+                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+                <PropertyValues />
+                <SelectedOptionId i:nil="true" />
+                <WidthOnFlowchart i:nil="true" />
+                <AutoCloseMode>None</AutoCloseMode>
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
+              </AbstractStep>
+            </Childs>
+            <HeightOnFlowchart i:nil="true" />
+            <Id>109f05ba-8086-4c4e-8555-731b3b5e220e</Id>
+            <Parent z:Ref="i32" />
+            <PositionOnFlowchart xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+            <PropertyValues>
+              <PropertyValue z:Id="i42">
+                <PropertyName>Condition</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>isLoggedIn == true</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <WidthOnFlowchart i:nil="true" />
+            <AutoCloseMode>None</AutoCloseMode>
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>BR.Core.Base.If</_activityFullName>
+          </AbstractStep>
+        </Childs>
+        <HeightOnFlowchart i:nil="true" />
+        <Id>c4b44b80-cb7f-4726-8875-e6a23266b622</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues />
+        <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Новое окно (если сессия уже была)</Text>
+        <_activityFullName>BR.Core.Base.Container</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i43" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>770d609d-cdc7-4357-9798-822c675c1d68</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i44">
+            <PropertyName>Count</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>2</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId>0</SelectedOptionId>
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>BR.Core.Base.Sleep</_activityFullName>
+      </AbstractStep>
+    </Childs>
+    <HeightOnFlowchart i:nil="true" />
+    <Id>7e36984b-b195-4e3f-91c1-b0f7841f3d47</Id>
+    <Parent i:nil="true" />
+    <PositionOnFlowchart xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+    <PropertyValues />
+    <SelectedOptionId i:nil="true" />
+    <WidthOnFlowchart i:nil="true" />
+    <AutoCloseMode>None</AutoCloseMode>
+    <EnableStatus>true</EnableStatus>
+    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+    <RetryCount>-1</RetryCount>
+    <Text></Text>
+    <_activityFullName>BR.Core.Base.Container</_activityFullName>
+  </Logic>
+  <Name>Auth.pix</Name>
+  <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <Params>
+    <Parameter z:Id="i45">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>Login</Name>
+      <RunnerType>Freeze</RunnerType>
+      <TypeString>System.String</TypeString>
+    </Parameter>
+    <Parameter z:Id="i46">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>Password</Name>
+      <RunnerType>Freeze</RunnerType>
+      <TypeString>System.String</TypeString>
+    </Parameter>
+  </Params>
+  <PlatformVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+    <d2p1:_Build>0</d2p1:_Build>
+    <d2p1:_Major>3</d2p1:_Major>
+    <d2p1:_Minor>2</d2p1:_Minor>
+    <d2p1:_Revision>0</d2p1:_Revision>
+  </PlatformVersion>
+  <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
+  <Variables xmlns:d2p1="http://schemas.datacontract.org/2004/07/BR.Logic.Params">
+    <d2p1:Variable z:Id="i47">
+      <d2p1:DefaultValueExpression></d2p1:DefaultValueExpression>
+      <d2p1:Description>Проверка наличия открытой сессии SAP GUI</d2p1:Description>
+      <d2p1:Name>isLoggedIn</d2p1:Name>
+      <d2p1:TypeString>System.Boolean</d2p1:TypeString>
+    </d2p1:Variable>
+  </Variables>
+  <Version i:nil="true" />
+</Script>

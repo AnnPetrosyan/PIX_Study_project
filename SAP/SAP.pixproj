@@ -17,6 +17,26 @@
       <IsMain>false</IsMain>
       <Path>nuget.config</Path>
     </ProjectFileItem>
+    <ProjectFileItem z:Id="i5">
+      <IsDirectory>false</IsDirectory>
+      <IsMain>false</IsMain>
+      <Path>Auth.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i6">
+      <IsDirectory>false</IsDirectory>
+      <IsMain>false</IsMain>
+      <Path>SAP_export.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i7">
+      <IsDirectory>false</IsDirectory>
+      <IsMain>false</IsMain>
+      <Path>Email.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i8">
+      <IsDirectory>false</IsDirectory>
+      <IsMain>false</IsMain>
+      <Path>Excel_email.pix</Path>
+    </ProjectFileItem>
   </Files>
   <MasterUploadId i:nil="true" />
   <Name>SAP</Name>
