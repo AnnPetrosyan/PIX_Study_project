@@ -63,9 +63,91 @@
           <PropertyValue z:Id="i9">
             <PropertyName>FilePath</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>@"SAP_export.pix"</_expression>
+            <_expression>@"SAP.pix"</_expression>
             <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i10" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>11a9e226-839c-4936-91a6-af2fcb0b4ea1</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i11">
+            <PropertyName>FilePath</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>@"Excel.pix"</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i12">
+            <PropertyName>Parameters</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_screenShotBase64 i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d7p1:ArrayOfArgumentItem">
+              <d7p1:ArgumentItem z:Id="i13">
+                <d7p1:ArgumentName>filepath</d7p1:ArgumentName>
+                <d7p1:Description></d7p1:Description>
+                <d7p1:Expression>@"C:\Users\UserVC\AppData\Local\PIX\Projects\PIX_Study\SAP_МВЗ_отчет\s_alr_87013611.xlsx"</d7p1:Expression>
+                <d7p1:IsRequired>true</d7p1:IsRequired>
+                <d7p1:Type>System.String</d7p1:Type>
+              </d7p1:ArgumentItem>
+            </_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i14" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>f6524be1-c0cf-4484-ac0b-36ab6c055397</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i15">
+            <PropertyName>FilePath</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>@"Email.pix"</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i16">
+            <PropertyName>Parameters</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_screenShotBase64 i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d7p1:ArrayOfArgumentItem">
+              <d7p1:ArgumentItem z:Id="i17">
+                <d7p1:ArgumentName>passwordemail</d7p1:ArgumentName>
+                <d7p1:Description></d7p1:Description>
+                <d7p1:Expression>"mignxduxkfroxnab"</d7p1:Expression>
+                <d7p1:IsRequired>true</d7p1:IsRequired>
+                <d7p1:Type>System.String</d7p1:Type>
+              </d7p1:ArgumentItem>
+            </_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
         </PropertyValues>
@@ -96,49 +178,49 @@
   <Name>main.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
-    <Parameter z:Id="i10">
+    <Parameter z:Id="i18">
       <DefaultValueExpression></DefaultValueExpression>
       <Description>Период с (дд.мм.гггг)</Description>
       <Name>periodFrom</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>
-    <Parameter z:Id="i11">
+    <Parameter z:Id="i19">
       <DefaultValueExpression></DefaultValueExpression>
       <Description>Период по (дд.мм.гггг)</Description>
       <Name>periodTo</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>
-    <Parameter z:Id="i12">
+    <Parameter z:Id="i20">
       <DefaultValueExpression></DefaultValueExpression>
       <Description>Год</Description>
       <Name>fiscalYear</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>
-    <Parameter z:Id="i13">
+    <Parameter z:Id="i21">
       <DefaultValueExpression></DefaultValueExpression>
       <Description>Контроллинговая единица (КЕ)</Description>
       <Name>coArea</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>
-    <Parameter z:Id="i14">
+    <Parameter z:Id="i22">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>Login</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>
-    <Parameter z:Id="i15">
+    <Parameter z:Id="i23">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>Password</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>
-    <Parameter z:Id="i16">
+    <Parameter z:Id="i24">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>NewParameter</Name>

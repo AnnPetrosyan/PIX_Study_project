@@ -25,17 +25,17 @@
     <ProjectFileItem z:Id="i6">
       <IsDirectory>false</IsDirectory>
       <IsMain>false</IsMain>
-      <Path>SAP_export.pix</Path>
+      <Path>Email.pix</Path>
     </ProjectFileItem>
     <ProjectFileItem z:Id="i7">
       <IsDirectory>false</IsDirectory>
       <IsMain>false</IsMain>
-      <Path>Email.pix</Path>
+      <Path>SAP.pix</Path>
     </ProjectFileItem>
     <ProjectFileItem z:Id="i8">
       <IsDirectory>false</IsDirectory>
       <IsMain>false</IsMain>
-      <Path>Excel_email.pix</Path>
+      <Path>Excel.pix</Path>
     </ProjectFileItem>
   </Files>
   <MasterUploadId i:nil="true" />
