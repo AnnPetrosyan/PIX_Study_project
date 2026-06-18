@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/BR.Logic">
+  <CompilationType>CSharp</CompilationType>
+  <Description>Новый скрипт без наполнения.</Description>
+  <Id>62d0dc2d-9df0-4f00-b473-feb691ed2828</Id>
+  <Logic z:Id="i2" i:type="ExecutedStep">
+    <Childs>
+      <AbstractStep z:Id="i3" i:type="ExecutedStep">
+        <Childs />
+        <Id>c92f1dce-c867-49a9-812f-408a3f6c485e</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i4">
+            <PropertyName>AddHeaders</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:boolean">true</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i5">
+            <PropertyName>IgnoreQuotes</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:boolean">false</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i6">
+            <PropertyName>DataTable</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>dataset</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i7">
+            <PropertyName>FileName</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>csvpath</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i8">
+            <PropertyName>Delimiter</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Activities.CSV" i:type="d7p1:TypeDelimiter">Comma</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i9">
+            <PropertyName>Encoding</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Activities.CSV" i:type="d7p1:TypeEncoding">Default</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.CSV.ReadCSV</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i10" i:type="ExecutedStep">
+        <Childs />
+        <Id>c9cdea72-a187-4e7d-9755-2b1586ef41c8</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i11">
+            <PropertyName>MLInput</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Activities.ML.Models" i:type="d7p1:TeachMLInputModel">
+              <d7p1:ColumnData>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>0</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>sepal.length</d7p1:ColumnName>
+                  <d7p1:ColumnType>NumType</d7p1:ColumnType>
+                  <d7p1:IsLabel>false</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>1</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>sepal.width</d7p1:ColumnName>
+                  <d7p1:ColumnType>NumType</d7p1:ColumnType>
+                  <d7p1:IsLabel>false</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>2</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>petal.length</d7p1:ColumnName>
+                  <d7p1:ColumnType>NumType</d7p1:ColumnType>
+                  <d7p1:IsLabel>false</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>3</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>petal.width</d7p1:ColumnName>
+                  <d7p1:ColumnType>NumType</d7p1:ColumnType>
+                  <d7p1:IsLabel>false</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>4</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>variety</d7p1:ColumnName>
+                  <d7p1:ColumnType>StringType</d7p1:ColumnType>
+                  <d7p1:IsLabel>true</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+              </d7p1:ColumnData>
+              <d7p1:CsvDelimeter>44</d7p1:CsvDelimeter>
+              <d7p1:TrainingDataFilePath>M:\PIX Рабочие файлы\Интеграции\Модуль 4. ML\iris.csv</d7p1:TrainingDataFilePath>
+            </_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i12">
+            <PropertyName>MultiClassificationTrainer</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Activities.ML.Models" i:type="d7p1:MultiClassificationTrainer">LbfgsMaximumEntropy</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i13">
+            <PropertyName>ModelOutputPath</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>@"tests\test1"</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i14">
+            <PropertyName>ModelLogLoss</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>zn1</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.ML.MultiClassification_Teach</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i15" i:type="ExecutedStep">
+        <Childs />
+        <Id>4c7457c4-535d-4d46-ac57-577038c496c2</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i16">
+            <PropertyName>MLInput</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Activities.ML.Models" i:type="d7p1:TeachMLInputModel">
+              <d7p1:ColumnData>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>0</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>sepal.length</d7p1:ColumnName>
+                  <d7p1:ColumnType>NumType</d7p1:ColumnType>
+                  <d7p1:IsLabel>false</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>1</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>sepal.width</d7p1:ColumnName>
+                  <d7p1:ColumnType>NumType</d7p1:ColumnType>
+                  <d7p1:IsLabel>false</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>2</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>petal.length</d7p1:ColumnName>
+                  <d7p1:ColumnType>NumType</d7p1:ColumnType>
+                  <d7p1:IsLabel>false</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>3</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>petal.width</d7p1:ColumnName>
+                  <d7p1:ColumnType>NumType</d7p1:ColumnType>
+                  <d7p1:IsLabel>false</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>4</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>variety</d7p1:ColumnName>
+                  <d7p1:ColumnType>StringType</d7p1:ColumnType>
+                  <d7p1:IsLabel>true</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+              </d7p1:ColumnData>
+              <d7p1:CsvDelimeter>44</d7p1:CsvDelimeter>
+              <d7p1:TrainingDataFilePath>M:\PIX Рабочие файлы\Интеграции\Модуль 4. ML\iris.csv</d7p1:TrainingDataFilePath>
+            </_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i17">
+            <PropertyName>MultiClassificationTrainer</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Activities.ML.Models" i:type="d7p1:MultiClassificationTrainer">NaiveBayes</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i18">
+            <PropertyName>ModelOutputPath</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>@"tests\test2"</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i19">
+            <PropertyName>ModelLogLoss</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>zn2</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.ML.MultiClassification_Teach</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i20" i:type="ExecutedStep">
+        <Childs />
+        <Id>bef426e5-d399-43a2-8e72-586146908999</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i21">
+            <PropertyName>MLInput</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Activities.ML.Models" i:type="d7p1:TeachMLInputModel">
+              <d7p1:ColumnData>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>0</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>sepal.length</d7p1:ColumnName>
+                  <d7p1:ColumnType>NumType</d7p1:ColumnType>
+                  <d7p1:IsLabel>false</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>1</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>sepal.width</d7p1:ColumnName>
+                  <d7p1:ColumnType>NumType</d7p1:ColumnType>
+                  <d7p1:IsLabel>false</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>2</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>petal.length</d7p1:ColumnName>
+                  <d7p1:ColumnType>NumType</d7p1:ColumnType>
+                  <d7p1:IsLabel>false</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>3</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>petal.width</d7p1:ColumnName>
+                  <d7p1:ColumnType>NumType</d7p1:ColumnType>
+                  <d7p1:IsLabel>false</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>4</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>variety</d7p1:ColumnName>
+                  <d7p1:ColumnType>StringType</d7p1:ColumnType>
+                  <d7p1:IsLabel>true</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+              </d7p1:ColumnData>
+              <d7p1:CsvDelimeter>44</d7p1:CsvDelimeter>
+              <d7p1:TrainingDataFilePath>M:\PIX Рабочие файлы\Интеграции\Модуль 4. ML\iris.csv</d7p1:TrainingDataFilePath>
+            </_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i22">
+            <PropertyName>MultiClassificationTrainer</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Activities.ML.Models" i:type="d7p1:MultiClassificationTrainer">OneVersusAllAveragedPerceptron</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i23">
+            <PropertyName>ModelOutputPath</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>@"tests\test3"</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i24">
+            <PropertyName>ModelLogLoss</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>zn3</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.ML.MultiClassification_Teach</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i25" i:type="ExecutedStep">
+        <Childs />
+        <Id>d985c087-3aad-404b-9e26-27ee651440be</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i26">
+            <PropertyName>MLInput</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Activities.ML.Models" i:type="d7p1:TeachMLInputModel">
+              <d7p1:ColumnData>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>0</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>sepal.length</d7p1:ColumnName>
+                  <d7p1:ColumnType>NumType</d7p1:ColumnType>
+                  <d7p1:IsLabel>false</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>1</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>sepal.width</d7p1:ColumnName>
+                  <d7p1:ColumnType>NumType</d7p1:ColumnType>
+                  <d7p1:IsLabel>false</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>2</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>petal.length</d7p1:ColumnName>
+                  <d7p1:ColumnType>NumType</d7p1:ColumnType>
+                  <d7p1:IsLabel>false</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>3</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>petal.width</d7p1:ColumnName>
+                  <d7p1:ColumnType>NumType</d7p1:ColumnType>
+                  <d7p1:IsLabel>false</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>4</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>variety</d7p1:ColumnName>
+                  <d7p1:ColumnType>StringType</d7p1:ColumnType>
+                  <d7p1:IsLabel>true</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+              </d7p1:ColumnData>
+              <d7p1:CsvDelimeter>44</d7p1:CsvDelimeter>
+              <d7p1:TrainingDataFilePath>M:\PIX Рабочие файлы\Интеграции\Модуль 4. ML\iris.csv</d7p1:TrainingDataFilePath>
+            </_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i27">
+            <PropertyName>MultiClassificationTrainer</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Activities.ML.Models" i:type="d7p1:MultiClassificationTrainer">OneVersusAllFastForest</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i28">
+            <PropertyName>ModelOutputPath</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>@"tests\test4"</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i29">
+            <PropertyName>ModelLogLoss</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>zn4</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.ML.MultiClassification_Teach</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i30" i:type="ExecutedStep">
+        <Childs />
+        <Id>9bb91f0c-a7ec-46a5-8a85-ed9bf0c64e41</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i31">
+            <PropertyName>InitialTable</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.Collections" i:type="d7p1:DataTableSettings">
+              <d7p1:Table>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="DataTableSettingsTable" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element name="DataTableSettingsTable">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element name="sepal.length" type="xs:double" minOccurs="0" />
+                              <xs:element name="sepal.width" type="xs:double" minOccurs="0" />
+                              <xs:element name="petal.length" type="xs:double" minOccurs="0" />
+                              <xs:element name="petal.width" type="xs:double" minOccurs="0" />
+                              <xs:element name="variety" type="xs:string" minOccurs="0" />
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement xmlns="">
+                    <DataTableSettingsTable diffgr:id="DataTableSettingsTable1" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <sepal.length>5.104</sepal.length>
+                      <sepal.width>3.6</sepal.width>
+                      <petal.length>1.7</petal.length>
+                      <petal.width>0.4</petal.width>
+                    </DataTableSettingsTable>
+                    <DataTableSettingsTable diffgr:id="DataTableSettingsTable2" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                      <sepal.length>8.1</sepal.length>
+                      <sepal.width>3.6</sepal.width>
+                      <petal.length>6.7</petal.length>
+                      <petal.width>1.4</petal.width>
+                    </DataTableSettingsTable>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </d7p1:Table>
+            </_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i32">
+            <PropertyName>BaseDataTable</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>DT</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.BaseCollections.DT.CreateTable</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i33" i:type="ExecutedStep">
+        <Childs />
+        <Id>b8aad06a-7ca2-4ad5-8b67-b13e22280407</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i34">
+            <PropertyName>ModelInputPath</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>@"tests\test4"</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i35">
+            <PropertyName>LabelColumnName</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"variety"</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i36">
+            <PropertyName>Data</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>DT</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i37">
+            <PropertyName>PredictedData</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>result</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.ML.MultiClassification_Evaluate</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i38" i:type="ExecutedStep">
+        <Childs />
+        <Id>3e25e5ad-a6ed-4ec0-be6b-f6690b4434e5</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i39">
+            <PropertyName>Value</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression></_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i40">
+            <PropertyName>To</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression></_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+      </AbstractStep>
+    </Childs>
+    <Id>8026abd2-dc48-430b-adcb-496654aea6f7</Id>
+    <Parent i:nil="true" />
+    <PropertyValues />
+    <SelectedOptionId i:nil="true" />
+    <EnableStatus>true</EnableStatus>
+    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+    <RetryCount>-1</RetryCount>
+    <Text></Text>
+    <_activityFullName>BR.Core.Base.Container</_activityFullName>
+  </Logic>
+  <Name>Скрипт ML.pix</Name>
+  <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <Params>
+    <Parameter z:Id="i41">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>csvpath</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.String</TypeString>
+    </Parameter>
+  </Params>
+  <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
+  <Variables xmlns:d2p1="http://schemas.datacontract.org/2004/07/BR.Logic.Params" />
+  <Version i:nil="true" />
+</Script>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RobotizationProject xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/BR.Logic">
+  <Description></Description>
+  <Files>
+    <ProjectFileItem z:Id="i2">
+      <IsMain>true</IsMain>
+      <Path>Main.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i3">
+      <IsMain>false</IsMain>
+      <Path>Framework\ReadConfig.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i4">
+      <IsMain>false</IsMain>
+      <Path>Framework\InitApplications.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i5">
+      <IsMain>false</IsMain>
+      <Path>Framework\CloseApplications.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i6">
+      <IsMain>false</IsMain>
+      <Path>Framework\KillApplications.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i7">
+      <IsMain>false</IsMain>
+      <Path>Framework\GetTransactionItem.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i8">
+      <IsMain>false</IsMain>
+      <Path>ProcessTransactionItem.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i9">
+      <IsMain>false</IsMain>
+      <Path>Framework\SetTransactionStatus.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i10">
+      <IsMain>false</IsMain>
+      <Path>Framework\TakeScreenshot.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i11">
+      <IsMain>false</IsMain>
+      <Path>nuget.config</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i12">
+      <IsMain>false</IsMain>
+      <Path>packages.config</Path>
+    </ProjectFileItem>
+  </Files>
+  <MasterUploadId i:nil="true" />
+  <Name>Framework</Name>
+  <Version xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+    <d2p1:_Build>-1</d2p1:_Build>
+    <d2p1:_Major>1</d2p1:_Major>
+    <d2p1:_Minor>0</d2p1:_Minor>
+    <d2p1:_Revision>-1</d2p1:_Revision>
+  </Version>
+  <PlatformVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" xmlns="">
+    <d2p1:_Build>0</d2p1:_Build>
+    <d2p1:_Major>3</d2p1:_Major>
+    <d2p1:_Minor>0</d2p1:_Minor>
+    <d2p1:_Revision>1</d2p1:_Revision>
+  </PlatformVersion>
+</RobotizationProject>

@@ -100,11 +100,90 @@
       <AbstractStep z:Id="i13" i:type="ExecutedStep">
         <Childs />
         <HeightOnFlowchart>50</HeightOnFlowchart>
-        <Id>ac2fd2ba-e028-4df3-a3c7-374ac7cd15a7</Id>
+        <Id>98599ee4-2f31-4549-b6a0-916fb6beee36</Id>
         <Parent z:Ref="i2" />
         <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
           <PropertyValue z:Id="i14">
+            <PropertyName>CSCode</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>@"foreach (System.Data.DataRow row in sapDataTable.Rows)
+{
+    for (int i = 0; i &lt; sapDataTable.Columns.Count; i++)
+    {
+        string val = row[i].ToString().Trim();
+        if (string.IsNullOrEmpty(val)) continue;
+        if (char.IsLetter(val[0])) continue;
+        
+        // Столбец количества (индекс 3) — целые числа
+        if (i == 3)
+        {
+            if (val.EndsWith(""""-""""))
+            {
+                string clean = val.TrimEnd('-').Replace(""""."""", """""""").Replace("""","""", """"."""");
+                if (decimal.TryParse(clean, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out decimal num))
+                    row[i] = (-num).ToString(""""0"""", System.Globalization.CultureInfo.InvariantCulture);
+            }
+            else
+            {
+                string clean = val.Replace(""""."""", """""""").Replace("""","""", """"."""");
+                if (decimal.TryParse(clean, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out decimal num))
+                    row[i] = num.ToString(""""0"""", System.Globalization.CultureInfo.InvariantCulture);
+            }
+        }
+        // Столбец видов затрат (индекс 0) — целые числа (длинные номера)
+        else if (i == 0)
+        {
+            string clean = val.Replace(""""."""", """""""").Replace("""","""", """"."""");
+            if (decimal.TryParse(clean, out decimal num))
+                row[i] = num;
+        }
+        // Остальные числовые столбцы (индексы 2 и др.) — с двумя знаками после запятой
+        else
+        {
+            if (val.EndsWith(""""-""""))
+            {
+                string clean = val.TrimEnd('-').Replace(""""."""", """""""").Replace("""","""", """"."""");
+                if (decimal.TryParse(clean, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out decimal num))
+                    row[i] = (-num).ToString(""""0.00"""", System.Globalization.CultureInfo.InvariantCulture).Replace(""""."""", """","""");
+            }
+            else if (val.Contains("""",""""))
+            {
+                string clean = val.Replace(""""."""", """""""").Replace("""","""", """"."""");
+                if (decimal.TryParse(clean, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out decimal num))
+                    row[i] = num.ToString(""""0.00"""", System.Globalization.CultureInfo.InvariantCulture).Replace(""""."""", """","""");
+            }
+            else
+            {
+                string clean = val.Replace(""""."""", """""""");
+                if (decimal.TryParse(clean, out decimal num))
+                    row[i] = num.ToString(""""0.00"""", System.Globalization.CultureInfo.InvariantCulture).Replace(""""."""", """","""");
+            }
+        }
+    }
+}"</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>false</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>BR.Core.Base.ExecuteCSCode</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i15" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>ac2fd2ba-e028-4df3-a3c7-374ac7cd15a7</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i16">
             <PropertyName>CSCode</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>@"foreach (System.Data.DataRow row in sapDataTable.Rows)
@@ -174,14 +253,14 @@
         <Text></Text>
         <_activityFullName>BR.Core.Base.ExecuteCSCode</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i15" i:type="ExecutedStep">
+      <AbstractStep z:Id="i17" i:type="ExecutedStep">
         <Childs />
         <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>cf28d6d2-1665-43b1-a236-fd0bd79aa4e1</Id>
         <Parent z:Ref="i2" />
         <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
-          <PropertyValue z:Id="i16">
+          <PropertyValue z:Id="i18">
             <PropertyName>CSCode</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>@"// Создаём новый DataTable с нужными типами колонок
@@ -272,14 +351,14 @@ sapDataTable = resultTable;"</_expression>
         <Text></Text>
         <_activityFullName>BR.Core.Base.ExecuteCSCode</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i17" i:type="ExecutedStep">
+      <AbstractStep z:Id="i19" i:type="ExecutedStep">
         <Childs />
         <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>8e667900-aaf1-4d07-bc26-a1d3f53f4b4a</Id>
         <Parent z:Ref="i2" />
         <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
-          <PropertyValue z:Id="i18">
+          <PropertyValue z:Id="i20">
             <PropertyName>DataTable</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>sapDataTable</_expression>
@@ -287,7 +366,7 @@ sapDataTable = resultTable;"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i19">
+          <PropertyValue z:Id="i21">
             <PropertyName>SheetName</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
@@ -297,7 +376,7 @@ sapDataTable = resultTable;"</_expression>
             </_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i20">
+          <PropertyValue z:Id="i22">
             <PropertyName>FileName</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>@"C:\Users\UserVC\AppData\Local\PIX\Projects\PIX_Study\SAP_МВЗ_отчет\s_alr_87013611.xlsx"</_expression>
@@ -315,14 +394,14 @@ sapDataTable = resultTable;"</_expression>
         <Text></Text>
         <_activityFullName>Activities.Office.Excel.WriteRange</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i21" i:type="ExecutedStep">
+      <AbstractStep z:Id="i23" i:type="ExecutedStep">
         <Childs />
         <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>3bf6f18f-85f3-427d-a5c7-e3e9a8d9dd36</Id>
         <Parent z:Ref="i2" />
         <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
-          <PropertyValue z:Id="i22">
+          <PropertyValue z:Id="i24">
             <PropertyName>PathToFile</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>filepath</_expression>
@@ -330,7 +409,7 @@ sapDataTable = resultTable;"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i23">
+          <PropertyValue z:Id="i25">
             <PropertyName>ExcelVariable</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>excelWorkbook</_expression>
@@ -348,14 +427,14 @@ sapDataTable = resultTable;"</_expression>
         <Text></Text>
         <_activityFullName>Activities.Office.InteropExcel.ConnectExcel</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i24" i:type="ExecutedStep">
+      <AbstractStep z:Id="i26" i:type="ExecutedStep">
         <Childs />
         <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>57e4026b-c912-4573-a8f0-b8191b680066</Id>
         <Parent z:Ref="i2" />
         <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
-          <PropertyValue z:Id="i25">
+          <PropertyValue z:Id="i27">
             <PropertyName>NumberFormatEnum</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
@@ -363,7 +442,7 @@ sapDataTable = resultTable;"</_expression>
             <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/XLEnums" i:type="d7p1:NumberFormat">Text</_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i26">
+          <PropertyValue z:Id="i28">
             <PropertyName>CellProperties</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>green</_expression>
@@ -371,7 +450,7 @@ sapDataTable = resultTable;"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i27">
+          <PropertyValue z:Id="i29">
             <PropertyName>ForegroundColor</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>System.Drawing.Color.Green</_expression>
@@ -389,14 +468,14 @@ sapDataTable = resultTable;"</_expression>
         <Text></Text>
         <_activityFullName>Activities.CellProperty.CreateCellProperty</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i28" i:type="ExecutedStep">
+      <AbstractStep z:Id="i30" i:type="ExecutedStep">
         <Childs />
         <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>188fac1b-b258-4a31-81d6-199c8d00e6d2</Id>
         <Parent z:Ref="i2" />
         <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
-          <PropertyValue z:Id="i29">
+          <PropertyValue z:Id="i31">
             <PropertyName>NumberFormatEnum</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
@@ -404,7 +483,7 @@ sapDataTable = resultTable;"</_expression>
             <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/XLEnums" i:type="d7p1:NumberFormat">Number</_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i30">
+          <PropertyValue z:Id="i32">
             <PropertyName>CellProperties</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>numberprop</_expression>
@@ -422,14 +501,14 @@ sapDataTable = resultTable;"</_expression>
         <Text></Text>
         <_activityFullName>Activities.CellProperty.CreateCellProperty</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i31" i:type="ExecutedStep">
+      <AbstractStep z:Id="i33" i:type="ExecutedStep">
         <Childs />
         <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>181f605e-0dff-4ddc-84f0-0e29e36e5fd4</Id>
         <Parent z:Ref="i2" />
         <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
-          <PropertyValue z:Id="i32">
+          <PropertyValue z:Id="i34">
             <PropertyName>NumberFormatEnum</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
@@ -437,7 +516,7 @@ sapDataTable = resultTable;"</_expression>
             <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/XLEnums" i:type="d7p1:NumberFormat">General</_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i33">
+          <PropertyValue z:Id="i35">
             <PropertyName>CellProperties</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>commprop</_expression>
@@ -455,14 +534,14 @@ sapDataTable = resultTable;"</_expression>
         <Text></Text>
         <_activityFullName>Activities.CellProperty.CreateCellProperty</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i34" i:type="ExecutedStep">
+      <AbstractStep z:Id="i36" i:type="ExecutedStep">
         <Childs />
         <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>30ac7063-7aca-4c8d-b794-32a9ed3e061b</Id>
         <Parent z:Ref="i2" />
         <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
-          <PropertyValue z:Id="i35">
+          <PropertyValue z:Id="i37">
             <PropertyName>NumberFormatEnum</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
@@ -470,7 +549,7 @@ sapDataTable = resultTable;"</_expression>
             <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/XLEnums" i:type="d7p1:NumberFormat">General</_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i36">
+          <PropertyValue z:Id="i38">
             <PropertyName>CellProperties</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>commprop2</_expression>
@@ -478,7 +557,7 @@ sapDataTable = resultTable;"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i37">
+          <PropertyValue z:Id="i39">
             <PropertyName>HorizontalAlignment</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
@@ -496,14 +575,14 @@ sapDataTable = resultTable;"</_expression>
         <Text></Text>
         <_activityFullName>Activities.CellProperty.CreateCellProperty</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i38" i:type="ExecutedStep">
+      <AbstractStep z:Id="i40" i:type="ExecutedStep">
         <Childs />
         <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>2644a3db-46a8-4e10-a7c8-d7861c8f3355</Id>
         <Parent z:Ref="i2" />
         <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
-          <PropertyValue z:Id="i39">
+          <PropertyValue z:Id="i41">
             <PropertyName>Range</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>"A1:E1"</_expression>
@@ -511,7 +590,7 @@ sapDataTable = resultTable;"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i40">
+          <PropertyValue z:Id="i42">
             <PropertyName>CellProperties</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>green</_expression>
@@ -519,7 +598,7 @@ sapDataTable = resultTable;"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i41">
+          <PropertyValue z:Id="i43">
             <PropertyName>SheetName</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
@@ -529,7 +608,7 @@ sapDataTable = resultTable;"</_expression>
             </_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i42">
+          <PropertyValue z:Id="i44">
             <PropertyName>FileName</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>excelWorkbook</_expression>
@@ -547,14 +626,14 @@ sapDataTable = resultTable;"</_expression>
         <Text></Text>
         <_activityFullName>Activities.Office.Excel.SetFormat</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i43" i:type="ExecutedStep">
+      <AbstractStep z:Id="i45" i:type="ExecutedStep">
         <Childs />
         <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>e9080ae1-545f-4fde-b0c4-6c671f57becb</Id>
         <Parent z:Ref="i2" />
         <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
-          <PropertyValue z:Id="i44">
+          <PropertyValue z:Id="i46">
             <PropertyName>Range</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>"A2:A500"</_expression>
@@ -562,7 +641,7 @@ sapDataTable = resultTable;"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i45">
+          <PropertyValue z:Id="i47">
             <PropertyName>CellProperties</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>numberprop</_expression>
@@ -570,7 +649,7 @@ sapDataTable = resultTable;"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i46">
+          <PropertyValue z:Id="i48">
             <PropertyName>SheetName</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
@@ -580,7 +659,7 @@ sapDataTable = resultTable;"</_expression>
             </_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i47">
+          <PropertyValue z:Id="i49">
             <PropertyName>FileName</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>excelWorkbook</_expression>
@@ -598,14 +677,14 @@ sapDataTable = resultTable;"</_expression>
         <Text></Text>
         <_activityFullName>Activities.Office.Excel.SetFormat</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i48" i:type="ExecutedStep">
+      <AbstractStep z:Id="i50" i:type="ExecutedStep">
         <Childs />
         <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>3f434a00-979e-4a26-b58e-e890ccccd2ee</Id>
         <Parent z:Ref="i2" />
         <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
-          <PropertyValue z:Id="i49">
+          <PropertyValue z:Id="i51">
             <PropertyName>Range</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>"C2:C500"</_expression>
@@ -613,7 +692,7 @@ sapDataTable = resultTable;"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i50">
+          <PropertyValue z:Id="i52">
             <PropertyName>CellProperties</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>numberprop</_expression>
@@ -621,7 +700,7 @@ sapDataTable = resultTable;"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i51">
+          <PropertyValue z:Id="i53">
             <PropertyName>SheetName</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
@@ -631,7 +710,7 @@ sapDataTable = resultTable;"</_expression>
             </_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i52">
+          <PropertyValue z:Id="i54">
             <PropertyName>FileName</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>excelWorkbook</_expression>
@@ -649,14 +728,14 @@ sapDataTable = resultTable;"</_expression>
         <Text></Text>
         <_activityFullName>Activities.Office.Excel.SetFormat</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i53" i:type="ExecutedStep">
+      <AbstractStep z:Id="i55" i:type="ExecutedStep">
         <Childs />
         <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>ce744661-1ecd-42bd-8239-1f8a6d03cb72</Id>
         <Parent z:Ref="i2" />
         <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
-          <PropertyValue z:Id="i54">
+          <PropertyValue z:Id="i56">
             <PropertyName>Range</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>"D2:D500"</_expression>
@@ -664,7 +743,7 @@ sapDataTable = resultTable;"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i55">
+          <PropertyValue z:Id="i57">
             <PropertyName>CellProperties</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>numberprop</_expression>
@@ -672,7 +751,7 @@ sapDataTable = resultTable;"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i56">
+          <PropertyValue z:Id="i58">
             <PropertyName>SheetName</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
@@ -682,7 +761,7 @@ sapDataTable = resultTable;"</_expression>
             </_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i57">
+          <PropertyValue z:Id="i59">
             <PropertyName>FileName</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>excelWorkbook</_expression>
@@ -700,14 +779,14 @@ sapDataTable = resultTable;"</_expression>
         <Text></Text>
         <_activityFullName>Activities.Office.Excel.SetFormat</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i58" i:type="ExecutedStep">
+      <AbstractStep z:Id="i60" i:type="ExecutedStep">
         <Childs />
         <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>918dbdf1-16fb-4db2-a03c-71eee2b8b7c8</Id>
         <Parent z:Ref="i2" />
         <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
-          <PropertyValue z:Id="i59">
+          <PropertyValue z:Id="i61">
             <PropertyName>Range</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>"A2:A500"</_expression>
@@ -715,7 +794,7 @@ sapDataTable = resultTable;"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i60">
+          <PropertyValue z:Id="i62">
             <PropertyName>CellProperties</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>commprop2</_expression>
@@ -723,7 +802,7 @@ sapDataTable = resultTable;"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i61">
+          <PropertyValue z:Id="i63">
             <PropertyName>SheetName</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
@@ -733,7 +812,7 @@ sapDataTable = resultTable;"</_expression>
             </_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i62">
+          <PropertyValue z:Id="i64">
             <PropertyName>FileName</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>excelWorkbook</_expression>
@@ -751,14 +830,14 @@ sapDataTable = resultTable;"</_expression>
         <Text></Text>
         <_activityFullName>Activities.Office.Excel.SetFormat</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i63" i:type="ExecutedStep">
+      <AbstractStep z:Id="i65" i:type="ExecutedStep">
         <Childs />
         <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>76aec08e-1164-4251-9ec4-6dc2873b5f5d</Id>
         <Parent z:Ref="i2" />
         <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
-          <PropertyValue z:Id="i64">
+          <PropertyValue z:Id="i66">
             <PropertyName>Range</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>"D2:D500"</_expression>
@@ -766,7 +845,7 @@ sapDataTable = resultTable;"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i65">
+          <PropertyValue z:Id="i67">
             <PropertyName>CellProperties</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>commprop</_expression>
@@ -774,7 +853,7 @@ sapDataTable = resultTable;"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i66">
+          <PropertyValue z:Id="i68">
             <PropertyName>SheetName</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
@@ -784,7 +863,7 @@ sapDataTable = resultTable;"</_expression>
             </_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i67">
+          <PropertyValue z:Id="i69">
             <PropertyName>FileName</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>excelWorkbook</_expression>
@@ -802,14 +881,14 @@ sapDataTable = resultTable;"</_expression>
         <Text></Text>
         <_activityFullName>Activities.Office.Excel.SetFormat</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i68" i:type="ExecutedStep">
+      <AbstractStep z:Id="i70" i:type="ExecutedStep">
         <Childs />
         <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>df8da9b5-c3ca-458d-a037-2dfdd59aac28</Id>
         <Parent z:Ref="i2" />
         <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
-          <PropertyValue z:Id="i69">
+          <PropertyValue z:Id="i71">
             <PropertyName>NumberColumn</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>6</_expression>
@@ -817,7 +896,7 @@ sapDataTable = resultTable;"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i70">
+          <PropertyValue z:Id="i72">
             <PropertyName>CountColumn</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>3</_expression>
@@ -825,7 +904,7 @@ sapDataTable = resultTable;"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i71">
+          <PropertyValue z:Id="i73">
             <PropertyName>NameList</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
@@ -835,7 +914,7 @@ sapDataTable = resultTable;"</_expression>
             </_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i72">
+          <PropertyValue z:Id="i74">
             <PropertyName>ExcelVariable</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>excelWorkbook</_expression>
@@ -853,14 +932,14 @@ sapDataTable = resultTable;"</_expression>
         <Text></Text>
         <_activityFullName>Activities.Office.InteropExcel.DeleteColumn</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i73" i:type="ExecutedStep">
+      <AbstractStep z:Id="i75" i:type="ExecutedStep">
         <Childs />
         <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>e1f40eff-8c43-4c2d-8814-f71900db778c</Id>
         <Parent z:Ref="i2" />
         <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
-          <PropertyValue z:Id="i74">
+          <PropertyValue z:Id="i76">
             <PropertyName>NewFilePath</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>filepath</_expression>
@@ -868,7 +947,7 @@ sapDataTable = resultTable;"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i75">
+          <PropertyValue z:Id="i77">
             <PropertyName>SaveFormat</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
@@ -876,7 +955,7 @@ sapDataTable = resultTable;"</_expression>
             <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Activities.Office.InteropExcel" i:type="d7p1:ExcelInteropSaveFormat">OpenXMLWorkbook</_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i76">
+          <PropertyValue z:Id="i78">
             <PropertyName>ExcelVariable</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>excelWorkbook</_expression>
@@ -894,14 +973,14 @@ sapDataTable = resultTable;"</_expression>
         <Text></Text>
         <_activityFullName>Activities.Office.InteropExcel.ExcelInteropSaveAs</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i77" i:type="ExecutedStep">
+      <AbstractStep z:Id="i79" i:type="ExecutedStep">
         <Childs />
         <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>ecc0c5fe-cd20-41c0-9fcb-866844f027de</Id>
         <Parent z:Ref="i2" />
         <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
-          <PropertyValue z:Id="i78">
+          <PropertyValue z:Id="i80">
             <PropertyName>ExcelVariable</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>excelWorkbook</_expression>
@@ -937,7 +1016,7 @@ sapDataTable = resultTable;"</_expression>
   <Name>Excel.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
-    <Parameter z:Id="i79">
+    <Parameter z:Id="i81">
       <DefaultValueExpression>@"C:\Users\UserVC\AppData\Local\PIX\Projects\PIX_Study\SAP_МВЗ_отчет\s_alr_87013611.xlsx"</DefaultValueExpression>
       <Description></Description>
       <Name>filepath</Name>
