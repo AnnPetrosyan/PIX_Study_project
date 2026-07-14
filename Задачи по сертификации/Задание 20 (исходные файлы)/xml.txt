@@ -1,0 +1,10 @@
+<shiporder>
+<orderperson>Иван</orderperson>
+   <info>
+      <street>Саларьево</street>
+      <city>Москва</city>
+      <country>Россия</country>
+   </info>
+   <age>30</age>
+   <phone>545-344-33</phone>
+</shiporder>

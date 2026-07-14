@@ -17,41 +17,16 @@
       <IsMain>false</IsMain>
       <Path>nuget.config</Path>
     </ProjectFileItem>
-    <ProjectFileItem z:Id="i5">
-      <IsDirectory>false</IsDirectory>
-      <IsMain>false</IsMain>
-      <Path>Auth.pix</Path>
-    </ProjectFileItem>
-    <ProjectFileItem z:Id="i6">
-      <IsDirectory>false</IsDirectory>
-      <IsMain>false</IsMain>
-      <Path>Email.pix</Path>
-    </ProjectFileItem>
-    <ProjectFileItem z:Id="i7">
-      <IsDirectory>false</IsDirectory>
-      <IsMain>false</IsMain>
-      <Path>SAP.pix</Path>
-    </ProjectFileItem>
-    <ProjectFileItem z:Id="i8">
-      <IsDirectory>false</IsDirectory>
-      <IsMain>false</IsMain>
-      <Path>Excel.pix</Path>
-    </ProjectFileItem>
   </Files>
-  <MasterUploadId>3</MasterUploadId>
-  <Name>SAP</Name>
+  <MasterUploadId i:nil="true" />
+  <Name>FB50</Name>
   <PlatformVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
     <d2p1:_Build>0</d2p1:_Build>
     <d2p1:_Major>3</d2p1:_Major>
     <d2p1:_Minor>2</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </PlatformVersion>
-  <ProjectMaterUploadIds>
-    <ProjectMaterUploadId>
-      <MasterUploadId>3</MasterUploadId>
-      <Url>https://localhost:443</Url>
-    </ProjectMaterUploadId>
-  </ProjectMaterUploadIds>
+  <ProjectMaterUploadIds />
   <ProjectNamespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
     <d2p1:string>System</d2p1:string>
     <d2p1:string>System.IO</d2p1:string>

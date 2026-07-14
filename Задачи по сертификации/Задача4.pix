@@ -1,0 +1,932 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/BR.Logic">
+  <CompilationType>CSharp</CompilationType>
+  <Description>Новый скрипт без наполнения.</Description>
+  <Id>999da3d1-06f2-43fd-bd87-348d2e2ee6c2</Id>
+  <Logic z:Id="i2" i:type="ExecutedStep">
+    <Childs>
+      <AbstractStep z:Id="i3" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>c0331bdc-b084-4df2-8c0a-68c09c6443ae</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i4">
+            <PropertyName>URL</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"https://rpa2.ru/rpa_platformy/reyting_rpa_platform_2023/"</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i5">
+            <PropertyName>Browser</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>browser</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId>0</SelectedOptionId>
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Открытие страницы</Text>
+        <_activityFullName>Activities.Web.LaunchYandex</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i6" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>7ee6199f-78c5-4abb-9c54-1b2135e07c3b</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i7">
+            <PropertyName>XmlString</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>@"&lt;pointpath&gt;
+  &lt;columns&gt;
+    &lt;column name=""Column0"" attrname=""innerText"" xpath=""/html[1]/body[1]/div[7]/div[5]/div[2]/div[1]/div[1]/div[1]/blockquote[1]/div/h4[1]"" /&gt;
+  &lt;/columns&gt;
+&lt;/pointpath&gt;"</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i8">
+            <PropertyName>Result</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>ratingTable</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i9">
+            <PropertyName>Browser</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>browser</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId>1</SelectedOptionId>
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.Web.ScrapingData</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i10" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>732320d7-856c-4ca1-a462-e7abebd828bf</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i11">
+            <PropertyName>XmlString</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>@"&lt;pointpath&gt;
+  &lt;columns&gt;
+    &lt;column name=""Column0"" attrname=""innerText"" xpath=""/html[1]/body[1]/div[7]/div[5]/div[2]/div[1]/div[1]/div[1]/blockquote[1]/div/h4[1]"" /&gt;
+  &lt;/columns&gt;
+&lt;/pointpath&gt;"</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i12">
+            <PropertyName>Result</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>ratingTable</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i13">
+            <PropertyName>Browser</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>browser</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId>1</SelectedOptionId>
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>false</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Извлечение топ-10 платформ</Text>
+        <_activityFullName>Activities.Web.ScrapingData</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i14" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>48c929a1-91b7-4a26-a2bc-15defaa7454f</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i15">
+            <PropertyName>Value</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>@"C:\Users\UserVC\AppData\Local\PIX\Projects\PIX_Study\Задачи по сертификации\Задание 04\Рейтинг.xlsx"</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i16">
+            <PropertyName>To</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>filePath</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Задаём путь к Excel-файлу</Text>
+        <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i17" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>c84063e1-d84a-4a96-a34d-6ce06241e823</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i18">
+            <PropertyName>DataTable</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>ratingTable</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i19">
+            <PropertyName>SheetName</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_screenShotBase64 i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.Core.CustomProperty" i:type="d7p1:ExcelSheetSelector">
+              <d7p1:_value>Лист1</d7p1:_value>
+            </_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i20">
+            <PropertyName>FileName</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>filePath</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Сохраняем таблицу рейтинга в Excel</Text>
+        <_activityFullName>Activities.Office.Excel.WriteRange</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i21" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>f8477124-1cbc-4213-b77d-2eaaaf8fbe6f</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i22">
+            <PropertyName>Value</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>ratingTable.Rows[0][0].ToString()</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i23">
+            <PropertyName>To</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>leaderName</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Берём первую строку таблицы — лидера рейтинга</Text>
+        <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i24" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>f9f6c580-05f8-438c-b390-5811f1da184c</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i25">
+            <PropertyName>CSCode</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>@"ratingTable = new System.Data.DataTable();
+ratingTable.Columns.Add(""Место"", typeof(string));
+ratingTable.Columns.Add(""Название"", typeof(string));
+ratingTable.Columns.Add(""Ссылка"", typeof(string));"</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>false</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Создание таблицы с тремя колонками</Text>
+        <_activityFullName>BR.Core.Base.ExecuteCSCode</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i26" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>352bf28f-e8df-43b6-99ef-7429404ac82d</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i27">
+            <PropertyName>SearchBy</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_screenShotBase64 i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Web.Core" i:type="d7p1:ElementSearchBy">XPath</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i28">
+            <PropertyName>SearchString</PropertyName>
+            <_dataType>XPath</_dataType>
+            <_expression i:nil="true" />
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" z:Id="i29">
+              <d7p1:Nodes xmlns:d8p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel">
+                <d8p1:list>
+                  <d7p1:XPathNode z:Id="i30">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                      <d11p1:string>and</d11p1:string>
+                      <d11p1:string>and</d11p1:string>
+                      <d11p1:string>and</d11p1:string>
+                    </d7p1:AttributeOperators>
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i31">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value i:nil="true" />
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i32">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'http://www.w3.org/1999/xhtml'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>xmlns</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i33">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'ru'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>lang</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i34">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'ru'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>lang</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i35">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'bx-core bx-win bx-no-touch bx-no-retina bx-chrome desktop portrait'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>class</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                    <d7p1:Name>html</d7p1:Name>
+                  </d7p1:XPathNode>
+                  <d7p1:XPathNode z:Id="i36">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                      <d11p1:string>and</d11p1:string>
+                    </d7p1:AttributeOperators>
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i37">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value i:nil="true" />
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i38">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'site_s1 fill_bg_n '</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>class</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i39">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'main'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>id</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                    <d7p1:Name>body</d7p1:Name>
+                  </d7p1:XPathNode>
+                  <d7p1:XPathNode z:Id="i40">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i41">
+                          <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>7</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i42">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'wrapper1   basket_normal basket_fill_DARK without-delay  side_LEFT catalog_icons_N banner_auto with_fast_view mheader-v1 header-v1 regions_N fill_N footer-v1 front-vindex3 mfixed_N mfixed_view_always title-v4 with_phones ce_cmp with_lazy store_LIST_AMOUNT'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>class</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                    <d7p1:Name>div</d7p1:Name>
+                  </d7p1:XPathNode>
+                  <d7p1:XPathNode z:Id="i43">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                      <d11p1:string>and</d11p1:string>
+                    </d7p1:AttributeOperators>
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i44">
+                          <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>5</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i45">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'wraps hover_shine'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>class</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i46">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'content'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>id</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                    <d7p1:Name>div</d7p1:Name>
+                  </d7p1:XPathNode>
+                  <d7p1:XPathNode z:Id="i47">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i48">
+                          <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>2</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i49">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'wrapper_inner '</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>class</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                    <d7p1:Name>div</d7p1:Name>
+                  </d7p1:XPathNode>
+                  <d7p1:XPathNode z:Id="i50">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i51">
+                          <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>1</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i52">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'right_block  wide_'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>class</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                    <d7p1:Name>div</d7p1:Name>
+                  </d7p1:XPathNode>
+                  <d7p1:XPathNode z:Id="i53">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i54">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value i:nil="true" />
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i55">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'middle '</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>class</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                    <d7p1:Name>div</d7p1:Name>
+                  </d7p1:XPathNode>
+                  <d7p1:XPathNode z:Id="i56">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i57">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>1</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i58">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'container'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>class</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                    <d7p1:Name>div</d7p1:Name>
+                  </d7p1:XPathNode>
+                  <d7p1:XPathNode z:Id="i59">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i60">
+                          <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>2</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                    <d7p1:Name>h4</d7p1:Name>
+                  </d7p1:XPathNode>
+                  <d7p1:XPathNode z:Id="i61">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i62">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value i:nil="true" />
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                    <d7p1:Name>ul</d7p1:Name>
+                  </d7p1:XPathNode>
+                  <d7p1:XPathNode z:Id="i63">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i64">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>1</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                    <d7p1:Name>li</d7p1:Name>
+                  </d7p1:XPathNode>
+                  <d7p1:XPathNode z:Id="i65">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i66">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value i:nil="true" />
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                    <d7p1:Name>p</d7p1:Name>
+                  </d7p1:XPathNode>
+                </d8p1:list>
+              </d7p1:Nodes>
+              <d7p1:ScreenShotBase64>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H1X+/L7w+sf3V9xj/wDFSf8AUJ/8iUf8VJ/1Cf8AyJWxRR9V/vy+8PrH91fcY/8AxUn/AFCf/IlH/FSf9Qn/AMiVsUUfVf78vvD6x/dX3GP/AMVJ/wBQn/yJR/xUn/UJ/wDIlbFFH1X+/L7w+sf3V9xj/wDFSf8AUJ/8iUf8VJ/1Cf8AyJWxRR9V/vy+8PrH91fcY/8AxUn/AFCf/IlH/FSf9Qn/AMiVsUUfVf78vvD6x/dX3GP/AMVJ/wBQn/yJR/xUn/UJ/wDIlbFFH1X+/L7w+sf3V9xj/wDFSf8AUJ/8iUf8VJ/1Cf8AyJWxRR9V/vy+8PrH91fcY/8AxUn/AFCf/IlH/FSf9Qn/AMiVsUUfVf78vvD6x/dX3GP/AMVJ/wBQn/yJR/xUn/UJ/wDIlbFFH1X+/L7w+sf3V9xj/wDFSf8AUJ/8iUf8VJ/1Cf8AyJWxRR9V/vy+8PrH91fcY/8AxUn/AFCf/IlH/FSf9Qn/AMiVsUUfVf78vvD6x/dX3GP/AMVJ/wBQn/yJR/xUn/UJ/wDIlbFFH1X+/L7w+sf3V9xj/wDFSf8AUJ/8iUf8VJ/1Cf8AyJWxRR9V/vy+8PrH91fcY/8AxUn/AFCf/IlH/FSf9Qn/AMiVsUUfVf78vvD6x/dX3GP/AMVJ/wBQn/yJR/xUn/UJ/wDIlbFFH1X+/L7w+sf3V9xj/wDFSf8AUJ/8iUf8VJ/1Cf8AyJWxRR9V/vy+8PrH91fcY/8AxUn/AFCf/IlH/FSf9Qn/AMiVsUUfVf78vvD6x/dX3GP/AMVJ/wBQn/yJR/xUn/UJ/wDIlbFFH1X+/L7w+sf3V9xj/wDFSf8AUJ/8iUf8VJ/1Cf8AyJWxRR9V/vy+8PrH91fcY/8AxUn/AFCf/IlH/FSf9Qn/AMiVsUUfVf78vvD6x/dX3GP/AMVJ/wBQn/yJR/xUn/UJ/wDIlbFFH1X+/L7w+sf3V9xj/wDFSf8AUJ/8iUf8VJ/1Cf8AyJWxRR9V/vy+8PrH91fcY/8AxUn/AFCf/IlH/FSf9Qn/AMiVsUUfVf78vvD6x/dX3GP/AMVJ/wBQn/yJR/xUn/UJ/wDIlbFFH1X+/L7w+sf3V9xQ0W9l1HSYLuZUWSTdkICBwxHf6UVW8Lf8i3af8D/9DaiqwkpTw9OUt2l+ROJio1pxWyb/ADMbx9eXmm2ttf2bQxyRLKgmnJEc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</d7p1:ScreenShotBase64>
+            </_xpathSettings>
+          </PropertyValue>
+          <PropertyValue z:Id="i67">
+            <PropertyName>Result</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>criteriaElements</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i68">
+            <PropertyName>Results</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>criteriaElements</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i69">
+            <PropertyName>Browser</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>browser</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId>1</SelectedOptionId>
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Находим все критерии на странице</Text>
+        <_activityFullName>Activities.Web.FindElement</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i70" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>0f707c9d-fa50-4041-b568-0c5a5da8d538</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i71">
+            <PropertyName>Value</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>new System.Collections.Generic.List&lt;string&gt;()</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i72">
+            <PropertyName>To</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>criteriaList</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Готовим пустой список для сбора критериев</Text>
+        <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i73" i:type="ExecutedStep">
+        <Childs>
+          <AbstractStep z:Id="i74" i:type="ExecutedStep">
+            <Childs />
+            <HeightOnFlowchart>50</HeightOnFlowchart>
+            <Id>afd9b183-f483-4103-a2f6-7709ffb28fda</Id>
+            <Parent z:Ref="i73" />
+            <PositionOnFlowchart xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+            <PropertyValues>
+              <PropertyValue z:Id="i75">
+                <PropertyName>CSCode</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>@"string text = element.GetProperty(""innerText"").ToString();
+if (!string.IsNullOrEmpty(text))
+    criteriaList.Add(text.Trim());"</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <WidthOnFlowchart>360</WidthOnFlowchart>
+            <AutoCloseMode>None</AutoCloseMode>
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text>Извлекаем текст критерия и добавляем в список</Text>
+            <_activityFullName>BR.Core.Base.ExecuteCSCode</_activityFullName>
+          </AbstractStep>
+        </Childs>
+        <HeightOnFlowchart i:nil="true" />
+        <Id>7c773f80-bd87-4cbf-94cb-0166fede9046</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i76">
+            <PropertyName>Collection</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>criteriaElements</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i77">
+            <PropertyName>Iterator</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>element</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i78">
+            <PropertyName>Counter</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>counter</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>BR.Core.Base.LoopForEach</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i79" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>eb2b57ea-01cb-4d5c-80e6-b1d55521f53a</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i80">
+            <PropertyName>Value</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"Критерии:\n" + String.Join("\n", criteriaList)</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i81">
+            <PropertyName>To</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>criteriaText</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Формирование текста критериев</Text>
+        <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i82" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>5bb70a13-3304-47ea-84f4-66737ec1fc7a</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i83">
+            <PropertyName>Value</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>@"C:\Users\UserVC\AppData\Local\PIX\Projects\PIX_Study\Задачи по сертификации\Задание 04\Лидер.docx"</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i84">
+            <PropertyName>To</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>wordPath</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Задаём путь к Word-файлу</Text>
+        <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i85" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>82e417d5-ed9c-42e3-b56c-771d6da4546b</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i86">
+            <PropertyName>Text</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"Лидер - " + leaderName + "\n\n" + criteriaText</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i87">
+            <PropertyName>WordFilePath</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>wordPath</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Записываем лидера и критерии в документ</Text>
+        <_activityFullName>Activities.Office.Word.WriteText</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i88" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>da4612ce-5a74-4697-8d69-919bcf2021e9</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i89">
+            <PropertyName>Browser</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>browser</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId>0</SelectedOptionId>
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.Web.CloseBrowser</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i90" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>a66cfd5a-9f38-4632-9bed-335a9d121a84</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i91">
+            <PropertyName>Text</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"Готово! Рейтинг сохранён в Excel, лидер записан в Word."</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.Interactive.MessageBox</_activityFullName>
+      </AbstractStep>
+    </Childs>
+    <HeightOnFlowchart i:nil="true" />
+    <Id>5f3cfc66-7bfd-42c8-a3c9-384453b7878a</Id>
+    <Parent i:nil="true" />
+    <PositionOnFlowchart xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+    <PropertyValues />
+    <SelectedOptionId i:nil="true" />
+    <WidthOnFlowchart i:nil="true" />
+    <AutoCloseMode>None</AutoCloseMode>
+    <EnableStatus>true</EnableStatus>
+    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+    <RetryCount>-1</RetryCount>
+    <Text></Text>
+    <_activityFullName>BR.Core.Base.Container</_activityFullName>
+  </Logic>
+  <Name>Задача4.pix</Name>
+  <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <Params />
+  <PlatformVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+    <d2p1:_Build>0</d2p1:_Build>
+    <d2p1:_Major>3</d2p1:_Major>
+    <d2p1:_Minor>2</d2p1:_Minor>
+    <d2p1:_Revision>0</d2p1:_Revision>
+  </PlatformVersion>
+  <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
+  <Variables xmlns:d2p1="http://schemas.datacontract.org/2004/07/BR.Logic.Params">
+    <d2p1:Variable z:Id="i92">
+      <d2p1:DefaultValueExpression></d2p1:DefaultValueExpression>
+      <d2p1:Description></d2p1:Description>
+      <d2p1:Name>ratingTable</d2p1:Name>
+      <d2p1:TypeString>System.Data.DataTable</d2p1:TypeString>
+    </d2p1:Variable>
+  </Variables>
+  <Version i:nil="true" />
+</Script>
